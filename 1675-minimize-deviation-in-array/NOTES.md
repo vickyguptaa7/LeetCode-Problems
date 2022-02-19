@@ -1,0 +1,2 @@
+In This Types Of Question Try To Reduce The Problem In One Operation At Time So That It Become Easy To Solve Like In This We Make All Odd Even And After This We Will Do Only The Even Operations Only.
+​
