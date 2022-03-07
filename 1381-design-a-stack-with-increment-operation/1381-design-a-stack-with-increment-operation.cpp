@@ -1,8 +1,9 @@
 class CustomStack {
 public:
-    int *arr,top,Size;
+    int *arr,top,Size,*inc;
     CustomStack(int maxSize) {
         arr=new int[maxSize];
+        inc=new int[maxSize];
         top=0;
         Size=maxSize;
     }
@@ -13,20 +14,27 @@ public:
             return;
         }
         arr[top]=x;
+        inc[top]=0;
         top++;
     }
     
     int pop() {
         if(top==0)return -1;
         top--;
-        return arr[top];
+        int res=inc[top]+arr[top];
+        if(top!=0)
+        {
+            inc[top-1]+=inc[top];
+        }
+            return res;
+
     }
     
     void increment(int k, int val) {
         int Max=min(k,top);
-        for(int i=0;i<Max;i++)
+        if(Max-1>=0)
         {
-            arr[i]+=val;
+            inc[Max-1]+=val;
         }
     }
 };
