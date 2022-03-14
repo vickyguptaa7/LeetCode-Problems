@@ -28,17 +28,11 @@ public:
             }
             while(i<n&&path[i]=='/')i++;
         }
-        vector<string>store;
+        string res;
         while(!st.empty())
         {
-            store.push_back(st.top());
+            res="/"+st.top()+res;
             st.pop();
-        }
-        reverse(store.begin(),store.end());
-        string res;
-        for(auto x:store)
-        {
-            res=res+"/"+x;
         }
         return (res.size()==0)?"/":res;
     }
