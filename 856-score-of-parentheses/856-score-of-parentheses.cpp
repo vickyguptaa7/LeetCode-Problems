@@ -1,34 +1,32 @@
 class Solution {
 public:
-    
-    int helper(string s,int &i)
+    int helper(string s,int &index)
     {
-        int score=0,n=s.size();
-        while(i<n)
+        int score=0,len=s.size();
+        while(index<len)
         {
-            if(s[i]=='(')
+            if(s[index]=='(')
             {
-                i++;
-                if(s[i]==')')
+                index++;
+                if(s[index]==')')
                 {
                     score++;
-                    i++;
                 }
-                else
+                else 
                 {
-                    score+=2*helper(s,i);
+                    score+=2*helper(s,index);
                 }
             }
             else
             {
-                i++;
-                break;
+                return score;
             }
+                                index++;
         }
         return score;
     }
     int scoreOfParentheses(string s) {
-        int i=0;
-        return helper(s,i);
+        int index=0;
+        return helper(s,index);
     }
 };
