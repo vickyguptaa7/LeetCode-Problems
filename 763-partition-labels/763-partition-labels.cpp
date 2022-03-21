@@ -1,5 +1,27 @@
 class Solution {
 public:
+    vector<int> partitionLabels(string s) {
+        unordered_map<char,int>lastIndex;
+        for(int i=0;i<s.size();i++)
+        {
+            lastIndex[s[i]]=i;
+        }
+        vector<int>res;
+        int lindx=0,strt=0;
+        for(int i=0;i<s.size();i++)
+        {
+            lindx=max(lastIndex[s[i]],lindx);
+            if(i==lindx)
+            {
+                res.push_back(lindx-strt+1);
+                strt=lindx+1;
+            }
+        }
+        return res;
+    }
+};
+
+/*
     vector<pair<int,int>>Interval(string s)
     {
         unordered_map<int,pair<int,int>>umap;
@@ -66,4 +88,4 @@ public:
         }
         return result;
     }
-};
+*/
