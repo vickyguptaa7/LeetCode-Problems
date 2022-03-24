@@ -2,35 +2,39 @@ class Solution {
 public:
 vector<int> findAnagrams(string s, string p)
 {
-    vector<int>fp(26,0),fs(26,0);
-    vector<int>result;
-    int len1=s.length(),len2=p.length();
+    unordered_map<char,int>fpat;
     for(auto x:p)
     {
-        fp[x-'a']++;
+        fpat[x]++;
     }
+    int counter=fpat.size();
     
-    int left=0,right=0;
-    while(right<len1)
+    int slen=s.size(),plen=p.size(),right=0,left=0;
+    vector<int>result;
+    while(right<slen)
     {
-        if(len2>right-left)
+        while(right-left<plen)
         {
-            fs[s[right]-'a']++;
+            if(fpat.find(s[right])!=fpat.end())
+            {
+                fpat[s[right]]--;
+                if(fpat[s[right]]==0)counter--;
+            }
             right++;
         }
-        else
+        if(counter==0)
         {
-            if(fs==fp)
-            {
-                result.push_back(left);
-            }
-            fs[s[left]-'a']--;
-            left++;
+            result.push_back(left);
         }
-    }
-    if(fs==fp)
-    {
-        result.push_back(left);
+        if(fpat.find(s[left])!=fpat.end())
+        {
+            fpat[s[left]]++;
+            if(fpat[s[left]]==1)
+            {
+                counter++;
+            }
+        }
+        left++;
     }
     return result;
 }
