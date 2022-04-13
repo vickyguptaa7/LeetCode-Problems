@@ -2,30 +2,30 @@ class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {
         vector<vector<int>>matrix(n,vector<int>(n));
-        int total_num=n*n,curr=1;
-        int s_col=0,s_row=0,e_col=n-1,e_row=n-1;
-        while(curr<=total_num)
+        int row_s=0,col_s=0,row_e=n-1,col_e=n-1;
+        int cntr=1,upto=n*n;
+        while(cntr<=upto)
         {
-            for(int i=s_row;i<=e_col&&curr<=total_num;i++)
+            for(int i=col_s;i<=col_e;i++)
             {
-                matrix[s_row][i]=curr++;
+                matrix[col_s][i]=cntr++;
             }
-            s_row++;
-            for(int i=s_row;i<=e_row&&curr<=total_num;i++)
+            col_s++;
+            for(int i=col_s;i<=row_e;i++)
             {
-                matrix[i][e_col]=curr++;
+                matrix[i][col_e]=cntr++;
             }
-            e_col--;
-            for(int i=e_col;i>=s_col&&curr<=total_num;i--)
+            col_e--;
+            for(int i=col_e;i>=row_s;i--)
             {
-                matrix[e_row][i]=curr++;
+                matrix[row_e][i]=cntr++;
             }
-            e_row--;
-            for(int i=e_row;i>=s_row&&curr<=total_num;i--)
+            row_e--;
+            for(int i=row_e;i>=col_s;i--)
             {
-                matrix[i][s_col]=curr++;
+                matrix[i][row_s]=cntr++;
             }
-            s_col++;
+            row_s++;
         }
         return matrix;
     }
