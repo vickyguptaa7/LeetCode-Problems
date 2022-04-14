@@ -11,6 +11,51 @@ class Solution {
 public:
     vector<int> distanceK(TreeNode* root, TreeNode* target, int k) {
         
+        vector<int>result;
+        rootToNode(root,target,k,result);
+        return result;
+    }
+    
+    int rootToNode(TreeNode*root,TreeNode*target,int k,vector<int>&result)
+    {
+        if(!root)return -1;
+        if(root==target)
+        {
+            k_level_down(root,k,nullptr,result);
+            return 1;
+        }
+        int leftDepth=rootToNode(root->left,target,k,result);
+        if(leftDepth!=-1)
+        {
+            k_level_down(root,k-leftDepth,root->left,result);
+            return 1+leftDepth;
+        }
+        int rightDepth=rootToNode(root->right,target,k,result);
+        if(rightDepth!=-1)
+        {
+            k_level_down(root,k-rightDepth,root->right,result);
+            return 1+rightDepth;
+        }
+        return -1;
+    }
+    
+    void k_level_down(TreeNode*root,int lvl,TreeNode*block,vector<int>&result)
+    {
+        if(!root||root==block)return;
+        if(lvl==0)
+        {
+            result.push_back(root->val);
+        }
+        k_level_down(root->left,lvl-1,block,result);
+        k_level_down(root->right,lvl-1,block,result);
+    }
+};
+
+/*
+class Solution {
+public:
+    vector<int> distanceK(TreeNode* root, TreeNode* target, int k) {
+        
         vector<TreeNode*>path;
         rootToNodePath(root,path,target);
         vector<int>result;
@@ -54,3 +99,4 @@ public:
         
     }
 };
+*/
