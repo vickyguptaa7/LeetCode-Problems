@@ -10,31 +10,39 @@
  * };
  */
 class BSTIterator {
-    vector<int>in;
-    int iter;
+    TreeNode*curr;
+    int val;
     public:
 
     BSTIterator(TreeNode* root) {
-        Inorder(root);
-        iter=0;
+        curr=root;
+        val=-1;
     }
-    void Inorder(TreeNode*root)
+    void helper(TreeNode*root,int val,int &tar)
     {
         if(!root)return;
-        Inorder(root->left);
-        in.push_back(root->val);
-        Inorder(root->right);
-        return;
+        if(root->val>val)
+        {
+            tar=root->val;
+            helper(root->left,val,tar);
+        }
+        else
+        {
+            helper(root->right,val,tar);
+        }
     }
     int next() {
-        int res=in[iter];
-        iter++;
-        return res;
+        int tar=-1;
+       helper(curr,val,tar);
+        val=tar;
+        return tar;
     }
     
     bool hasNext() {
-        if(iter>=in.size())return false;
-        return true;
+        int tar=-1;
+        helper(curr,val,tar);
+        if(tar==-1)return false;
+        else return true;
     }
 };
 
