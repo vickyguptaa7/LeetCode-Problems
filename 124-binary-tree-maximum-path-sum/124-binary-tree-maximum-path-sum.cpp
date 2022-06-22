@@ -15,15 +15,12 @@ public:
     {
         if(!root)return 0;
         
-        int leftSum=maxPathSumHelper(root->left,ans);
-        int rightSum=maxPathSumHelper(root->right,ans);
+        int leftSum=max(maxPathSumHelper(root->left,ans),0);
+        int rightSum=max(maxPathSumHelper(root->right,ans),0);
     
         ans=max(ans,leftSum+rightSum+root->val);
-        ans=max(ans,leftSum+root->val);
-        ans=max(ans,rightSum+root->val);
-        ans=max(ans,root->val);
         
-        return max(0,max(leftSum,rightSum))+root->val;
+        return max(leftSum,rightSum)+root->val;
     }
     
     int maxPathSum(TreeNode* root) {
