@@ -1,30 +1,26 @@
-bool mycomp(vector<int>v1,vector<int>v2)
-{
-    return (v1[1]>v2[1]);
-}
 class Solution {
 public:
     int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) {
-        sort(boxTypes.begin(),boxTypes.end(),mycomp);
-        int cost=0;
-        int n=boxTypes.size();
-        for(int i=0;i<n;i++)
+        sort(boxTypes.begin(),boxTypes.end(),[](vector<int>&a,vector<int>&b){
+            if(a[1]!=b[1])
+                return a[1]>b[1];
+            return a[0]>b[0];
+        });
+        
+        int result=0;
+        for(auto x:boxTypes)
         {
-            if(truckSize>=boxTypes[i][0])
+            if(truckSize>=x[0])
             {
-                cost+=boxTypes[i][0]*boxTypes[i][1];
-                truckSize-=boxTypes[i][0];
-            }
-            else if(truckSize>0)
-            {
-                cost+=truckSize*boxTypes[i][1];
-                truckSize=0;
+                result+=x[0]*x[1];
+                truckSize-=x[0];
             }
             else
             {
+                result+=x[1]*truckSize;
                 break;
             }
         }
-        return cost;
+        return result;
     }
 };
