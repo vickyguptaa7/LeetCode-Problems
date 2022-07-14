@@ -11,27 +11,30 @@
  */
 class Solution {
 public:
-    TreeNode*helper(int &ps,int pe,int is,int ie,vector<int>&preorder,vector<int>&inorder)
+    
+    TreeNode*helper(int &pindx,int strt,int end,vector<int>&preorder,vector<int>&inorder)
     {
-        if(ps>pe||is>ie)return nullptr;
-        TreeNode*root=new TreeNode(preorder[ps++]);
-        int index=is;
-        for(int i=is;i<=ie;i++)
+        if(strt>end||pindx==preorder.size())
+            return nullptr;
+        int mid;
+        for(int i=strt;i<=end;i++)
         {
-            if(inorder[i]==preorder[ps-1])
+            if(preorder[pindx]==inorder[i])
             {
-                index=i;
+                mid=i;
                 break;
             }
         }
-        root->left=helper(ps,pe,is,index-1,preorder,inorder);
-        root->right=helper(ps,pe,index+1,ie,preorder,inorder);
+        pindx++;
+        TreeNode*root=new TreeNode(inorder[mid]);
+        root->left=helper(pindx,strt,mid-1,preorder,inorder);
+        root->right=helper(pindx,mid+1,end,preorder,inorder);
         return root;
     }
-    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder)
-    {
-        int arrayLen=preorder.size()-1;
-        int ps=0;
-        return helper(ps,arrayLen,0,arrayLen,preorder,inorder);
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+        int pindx=0;
+        int strt=0,end=inorder.size()-1;
+        
+        return helper(pindx,strt,end,preorder,inorder);
     }
 };
