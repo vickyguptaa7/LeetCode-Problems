@@ -11,48 +11,34 @@
 class Solution {
 public:
     ListNode* partition(ListNode* head, int x) {
-        if(head==nullptr||head->next==nullptr)
-        return head;
-    
+        if(head==nullptr)return head;
+        ListNode*dummy=new ListNode(0);
+        dummy->next=head;
+        ListNode*small=nullptr,*sitr=nullptr,*itr=dummy;
         
-        ListNode*h1=nullptr,*h2=nullptr;
-        ListNode*pntr1=nullptr,*pntr2=nullptr;
-        ListNode*curr=head;
-        while(curr!=nullptr)
+        while(itr&&itr->next)
         {
-            if(curr->val<x)
+            if(itr->next->val<x)
             {
-                if(pntr1==nullptr)
+                if(small==nullptr)
                 {
-                    h1=curr;
-                    pntr1=curr;
+                    small=itr->next;
+                    sitr=itr->next;
+                    itr->next=itr->next->next;
                 }
                 else
                 {
-                    pntr1->next=curr;
-                    pntr1=pntr1->next;
+                    sitr->next=itr->next;
+                    sitr=sitr->next;
+                    itr->next=itr->next->next;
                 }
             }
             else
-            {
-                if(pntr2==nullptr)
-                {
-                    h2=curr;
-                    pntr2=curr;
-                }
-                else
-                {
-                    pntr2->next=curr;
-                    pntr2=pntr2->next;
-                }
-            }
-            curr=curr->next;
+              itr=itr->next;
         }
-        if(pntr1)
-        pntr1->next=h2;
-        else return h2;
-        if(pntr2)
-        pntr2->next=nullptr;
-        return h1;
+        if(sitr==nullptr)return dummy->next;
+        
+        sitr->next=dummy->next;
+        return small;
     }
 };
