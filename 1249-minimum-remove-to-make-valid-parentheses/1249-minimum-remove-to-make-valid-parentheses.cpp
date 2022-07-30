@@ -1,81 +1,34 @@
 class Solution {
 public:
     string minRemoveToMakeValid(string s) {
-        stack<int>st;
+        stack<pair<char,int>>st;
         int n=s.size();
         for(int i=0;i<n;i++)
         {
-            if(s[i]=='(')st.push(i);
-            else if(s[i]==')')
+            if(s[i]>='a'&&s[i]<='z')continue;
+            if(!st.empty()&&s[i]==')'&&st.top().first=='(')
             {
-                if(st.empty())s[i]='@';
-                else st.pop();
+                st.pop();
+            }
+            else
+            {
+                st.push({s[i],i});
             }
         }
-        while(!st.empty())
+        string result;
+        for(int i=n-1;i>=0;i--)
         {
-            s[st.top()]='@';
-            st.pop();
+            if(!st.empty()&&st.top().second==i)
+            {
+                st.pop();
+                continue;
+            }
+            else
+            {
+                result+=s[i];
+            }
         }
-        string res;
-        for(auto &x:s)
-        {
-            if(x!='@')res+=x;
-        }
-        return res;
+        reverse(result.begin(),result.end());
+        return result;
     }
 };
-/*
-"((()()("
-
-class Solution {
-public:
-    void breverse(string &s)
-    {
-        for(auto &x:s)
-        {
-            if(x=='(')
-            {
-                x=')';
-            }
-            else if(x==')')
-            {
-                x='(';
-            }
-        }
-    }
-    string removeInvalid(string s)
-    {
-        int left=0,right=0;
-        string answer;
-        int n=s.length();
-        for(auto &x:s)
-        {
-            if(x=='(')
-            {
-                left++;
-            }
-            else if(x==')')
-            {
-                if(left>0)left--;
-                else
-                {
-                    right++;
-                    continue;
-                }
-            }
-            answer+=x;
-        }
-        return answer;
-    }
-    string minRemoveToMakeValid(string s) {
-        string answer=removeInvalid(s);
-        breverse(answer);
-        reverse(answer.begin(),answer.end());
-        string res=removeInvalid(answer);
-        reverse(res.begin(),res.end());
-        breverse(res);
-        return res;
-    }
-};
-*/
