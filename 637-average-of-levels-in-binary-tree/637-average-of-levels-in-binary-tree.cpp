@@ -11,31 +11,24 @@
  */
 class Solution {
 public:
-    
-    void helper(TreeNode*root,vector<double>&res,vector<int>&nCount,int lvl)
-    {
-        if(!root)return;
-        if(lvl==res.size())
-        {
-            res.push_back(root->val);
-            nCount.push_back(1);
-        }
-        else
-        {
-            res[lvl]+=root->val;
-            nCount[lvl]++;
-        }
-        helper(root->left,res,nCount,lvl+1);
-        helper(root->right,res,nCount,lvl+1);
-        
-    }
     vector<double> averageOfLevels(TreeNode* root) {
+        queue<TreeNode*>que;
+        que.push(root);
         vector<double>res;
-        vector<int>nCount;
-        helper(root,res,nCount,0);
-        for(int i=0;i<nCount.size();i++)
+        while(!que.empty())
         {
-            res[i]/=nCount[i];
+            int size=que.size(),noOfEle=que.size();
+            double sum=0;
+            while(size--)
+            {
+                auto curr=que.front();
+                que.pop();
+                sum+=curr->val;
+                if(curr->left)que.push(curr->left);
+                if(curr->right)que.push(curr->right);
+            }
+            sum/=noOfEle;
+            res.push_back(sum);
         }
         return res;
     }
