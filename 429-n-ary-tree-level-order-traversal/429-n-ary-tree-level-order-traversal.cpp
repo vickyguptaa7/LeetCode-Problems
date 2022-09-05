@@ -21,25 +21,25 @@ public:
 class Solution {
 public:
     vector<vector<int>> levelOrder(Node* root) {
-         vector<vector<int>> result;
-        if(!root)return result;
+        vector<vector<int>> result;
+        if(!root)  return result;
         queue<Node*>que;
         que.push(root);
         while(!que.empty())
         {
             int size=que.size();
-            vector<int>lvl;
+            vector<int>row;
             while(size--)
             {
-                Node*parent=que.front();
+                Node*curr=que.front();
                 que.pop();
-                lvl.push_back(parent->val);
-                for(auto curr:parent->children)
+                row.push_back(curr->val);
+                for(auto x:curr->children)
                 {
-                    que.push(curr);
+                    que.push(x);
                 }
             }
-            result.push_back(lvl);
+            result.push_back(row);
         }
         return result;
     }
