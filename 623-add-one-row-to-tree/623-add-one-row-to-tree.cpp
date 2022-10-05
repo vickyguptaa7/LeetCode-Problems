@@ -11,29 +11,28 @@
  */
 class Solution {
 public:
-    TreeNode* addOneRow(TreeNode* root, int val, int depth) {
-        if(!root)return nullptr;
+    
+    TreeNode* addOneRow(TreeNode* root, int val, int depth,bool isLeft=true) {
         if(depth==1)
         {
             TreeNode*newNode=new TreeNode(val);
-            newNode->right=nullptr;
-            newNode->left=root;
+            if(isLeft)
+            {
+                newNode->left=root;
+                newNode->right=nullptr;
+            }
+            else 
+            {
+                newNode->right=root;
+                newNode->left=nullptr;
+            }
             return newNode;
         }
-        if(depth==2)
-        {
-            TreeNode*newNodeLeft=new TreeNode(val);
-            TreeNode*newNodeRight=new TreeNode(val);
-            newNodeLeft->left=root->left;
-            newNodeLeft->right=nullptr;
-            newNodeRight->left=nullptr;
-            newNodeRight->right=root->right;
-            root->left=newNodeLeft;
-            root->right=newNodeRight;
+        if(!root)
             return root;
-        }
-        addOneRow(root->left,val,depth-1);
-        addOneRow(root->right,val,depth-1);
+        
+        root->left=addOneRow(root->left,val,depth-1,true);
+        root->right=addOneRow(root->right,val,depth-1,false);
         return root;
     }
 };
