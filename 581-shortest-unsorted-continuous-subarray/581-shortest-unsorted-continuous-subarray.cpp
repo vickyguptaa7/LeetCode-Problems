@@ -1,40 +1,45 @@
 class Solution {
 public:
     int findUnsortedSubarray(vector<int>& nums) {
-        int n=nums.size();
-        int it1=-1,it2=-1;
+        int left=-1,right=-1,n=nums.size();
         for(int i=1;i<n;i++)
         {
-            if(nums[i-1]>nums[i])
+            if(nums[i]<nums[i-1])
             {
-                it1=i-1;
+                left=i-1;
                 break;
             }
         }
-        if(it1==-1)return 0;
+        if(left==-1)
+            return 0;
         for(int i=n-2;i>=0;i--)
         {
             if(nums[i+1]<nums[i])
             {
-                it2=i+1;
+                right=i+1;
                 break;
             }
         }
-        int Min=nums[it1],Max=nums[it2];
-        for(int i=it1;i<=it2;i++)
+        int Min=nums[left],Max=nums[right];
+        for(int i=left;i<=right;i++)
         {
-            Min=min(Min,nums[i]);
-            Max=max(Max,nums[i]);
+            if(Min>nums[i])
+            {
+                Min=nums[i];
+            }
+            if(Max<nums[i])
+            {
+                Max=nums[i];
+            }
         }
-        while(it1>=0&&nums[it1]>Min)
+        while(left>=0&&nums[left]>Min)
         {
-            it1--;
+            left--;
         }
-        while(it2<n&&nums[it2]<Max)
+        while(right<n&&nums[right]<Max)
         {
-            it2++;
+            right++;
         }
-        cout<<it1<<" "<<it2<<"\n";
-        return it2-it1-1;
+        return right-left-1;
     }
 };
