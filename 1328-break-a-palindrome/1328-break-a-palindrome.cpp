@@ -1,22 +1,20 @@
 class Solution {
 public:
     string breakPalindrome(string palindrome) {
-        int len=palindrome.size();
-        if(len==1)return "";
-        
-        for(int i=0;i<len;i++)
+        if(palindrome.size()==1)
         {
-            if(len&1==1&&i==len/2)continue;
-            
-            if(palindrome[i]=='a')continue;
-            else 
+            return "";
+        }
+        for(int i=0;i<palindrome.size();i++)
+        {
+            if(palindrome[i]!='a')
             {
+                if((palindrome.size()&1)&&i==(palindrome.size())/2)continue;
                 palindrome[i]='a';
                 return palindrome;
             }
         }
-        
-        palindrome[len-1]='b';
+        palindrome.back()='b';
         return palindrome;
     }
 };
