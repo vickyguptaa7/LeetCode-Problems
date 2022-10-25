@@ -2,66 +2,38 @@ class Solution {
 public:
 int characterReplacement(string s, int k)
 {
-    map<char, int> windowFreq;
-    map<int, int> fFreq;
-    int resWindowSize = 1;
-    int curr = 0, prev = 0, n = s.size();
-    while (curr < n)
+    int n = s.size(), i = 0, st = 0, tbr = 0, res = 1, mf = 0, mfc;
+    // st is start of window
+    // tbr is number of characters to be replaced
+    // mf is max freq of among the characters
+    // m stores freq of characters in current window
+    map<int, int> m;
+    if (n == k)
+        return n;
+    while (i < n)
     {
-        int mostFrequentCount = 0;
-        if (!fFreq.empty())
+        m[s[i]]++;
+        mf = 0;
+        mfc = 0;
+        for (auto [c, f] : m)
         {
-            mostFrequentCount = fFreq.rbegin()->first;
-        }
-        if (curr - prev - mostFrequentCount <= k)
-        {
-            int oldFreq = 0;
-            if (fFreq.count(windowFreq[s[curr]]))
+            if (mf < f)
             {
-                oldFreq = windowFreq[s[curr]];
-                fFreq[windowFreq[s[curr]]]--;
-                if (fFreq[windowFreq[s[curr]]] == 0)
-                {
-                    fFreq.erase(windowFreq[s[curr]]);
-                }
-            }
-            fFreq[oldFreq + 1]++;
-            windowFreq[s[curr]]++;
-            curr++;
-            mostFrequentCount = fFreq.rbegin()->first;
-            if (curr - prev - mostFrequentCount <= k)
-                resWindowSize = max(resWindowSize, curr - prev);
-        }
-        else
-        {
-            while (curr > prev && curr - prev - mostFrequentCount > k)
-            {
-                windowFreq[s[prev]]--;
-                int oldFreq = windowFreq[s[curr]];
-                fFreq[windowFreq[s[curr]]]--;
-                if (fFreq[windowFreq[s[curr]]] == 0)
-                {
-                    fFreq.erase(fFreq[windowFreq[s[curr]]]);
-                }
-                if (oldFreq != 1)
-                    fFreq[oldFreq - 1]++;
-                if (windowFreq[s[prev]] == 0)
-                {
-                    windowFreq.erase(s[prev]);
-                }
-                if (windowFreq.empty())
-                {
-                    mostFrequentCount = 0;
-                }
-                else
-                {
-                    mostFrequentCount = fFreq.rbegin()->first;
-                }
-                prev++;
+                mf = f;
+                mfc = c;
             }
         }
+        tbr = (i - st + 1) - mf;
+        if (tbr <= k)
+            res = max(res, i - st + 1);
+        while (st < i and tbr > k)
+        {
+            tbr--;
+            m[s[st]]--;
+            st++;
+        }
+        i++;
     }
-    return resWindowSize;
+    return res;
 }
-
 };
