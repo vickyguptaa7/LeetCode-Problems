@@ -33,7 +33,6 @@ public:
             n/=2;
         }
         reverse(s.begin(),s.end());
-        cout<<s<<"\n";
         return s;
     }
     int findIntegers(int n) {
