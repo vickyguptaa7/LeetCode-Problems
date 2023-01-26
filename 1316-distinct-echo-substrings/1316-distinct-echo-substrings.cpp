@@ -25,7 +25,7 @@ class Solution
                 }
             }
         }
-        set<string>ans;
+        unordered_set<string>ans;
         for(auto [l,r]:substring)
         {
             ans.insert(text.substr(l,r));
