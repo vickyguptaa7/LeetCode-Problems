@@ -10,13 +10,11 @@ public:
     }
     
     vector<int> shuffle() {
-        vector<int>result;
-        vector<int>temp=init;
+        vector<int>result=init;
         for(int i=0;i<init.size();i++)
         {
-            int indx=rand()%((int)init.size()-i);
-            result.push_back(temp[indx]);
-            temp.erase(temp.begin()+indx);
+            int indx=rand()%((int)init.size());
+            swap(result[i],result[indx]);
         }
         return result;
     }
