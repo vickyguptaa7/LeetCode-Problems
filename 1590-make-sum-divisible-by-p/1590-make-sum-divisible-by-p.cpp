@@ -4,7 +4,7 @@ public:
         long long sum=accumulate(nums.begin(),nums.end(),0ll);
         if(sum%p==0)
             return 0;
-        map<int,vector<int>>mmindx;
+        unordered_map<int,vector<int>>mmindx;
         int n=nums.size();
         int minSize=n;
         for(int i=0;i<n;i++)
