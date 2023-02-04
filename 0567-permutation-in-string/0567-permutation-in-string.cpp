@@ -1,20 +1,25 @@
 class Solution {
 public:
     bool checkInclusion(string s1, string s2) {
-        map<char,int>freq1,freq2;
+        map<char,int>freq;
         for(auto x:s1)
-            freq1[x]++;
+            freq[x]++;
         int prev=0;
         for(int i=0;i<s2.size();i++)
         {
-            freq2[s2[i]]++;
+            freq[s2[i]]--;
+            
+            if(freq[s2[i]]==0)
+                freq.erase(s2[i]);
+            
             if(i-prev+1>s1.size())
             {
-                freq2[s2[prev++]]--;
-                if(freq2[s2[prev-1]]==0)
-                    freq2.erase(s2[prev-1]);
+                freq[s2[prev++]]++;
+                if(freq[s2[prev-1]]==0)
+                    freq.erase(s2[prev-1]);
             }
-            if(freq1==freq2)
+            
+            if(freq.empty())
                 return true;
         }
         return false;
