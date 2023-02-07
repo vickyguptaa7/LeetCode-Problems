@@ -3,31 +3,29 @@ public:
     
     int maximizeWin(vector<int>& p, int k) {
         int sum=0,n=p.size();
-        priority_queue<int>pque;
+        int prev=n-1;
         map<int,int>freq,score;
         for(int i=n-1;i>=0;i--)
         {
-            pque.push(p[i]);
-            while(pque.top()-p[i]>k)
+            while(p[prev]-p[i]>k)
             {
-                pque.pop();
+                prev--;
             }
-            freq[i]=pque.size();
-            score[pque.size()]++;
+            freq[i]=prev-i+1;
+            score[prev-i+1]++;
         }
         int ansMax=1;
-        priority_queue<int,vector<int>,greater<int>>pq;
+        prev=0;
         for(int i=0;i<n-1;i++)
         {
-            pq.push(p[i]);
             score[freq[i]]--;
             if(score[freq[i]]==0)
                 score.erase(freq[i]);
-            while(p[i]-pq.top()>k)
+            while(p[i]-p[prev]>k)
             {
-                pq.pop();
+                prev++;
             }
-            ansMax=max(ansMax,(int)pq.size()+score.rbegin()->first);
+            ansMax=max(ansMax,i-prev+1+score.rbegin()->first);
         }
         return ansMax;
     }
