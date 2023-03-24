@@ -1,34 +1,33 @@
 class RandomizedSet {
 public:
-    map<int,int>valIndx;
-    vector<int>value;
+    map<int,int>mindx;
+    vector<int>arr;
     RandomizedSet() {
         
     }
     
     bool insert(int val) {
-        if(valIndx.count(val))
+        if(mindx.count(val))
             return false;
-        valIndx[val]=value.size();
-        value.push_back(val);
+        mindx[val]=arr.size();
+        arr.push_back(val);
         return true;
     }
     
     bool remove(int val) {
-        if(!valIndx.count(val))
-            return false;
-        int last=value.back();
-        int pop=valIndx[val];
-        
-        value[pop]=last;
-        valIndx[last]=pop;
-        value.pop_back();
-        valIndx.erase(val);
-        return true;
+        if(mindx.count(val))
+        {
+            mindx[arr[arr.size()-1]]=mindx[val];
+            swap(arr[mindx[val]],arr[(int)arr.size()-1]);
+            arr.resize((int)arr.size()-1);
+            mindx.erase(val);
+            return true;
+        }
+        return false;
     }
     
     int getRandom() {
-        return value[rand()%value.size()];
+        return arr[rand()%arr.size()];
     }
 };
 
