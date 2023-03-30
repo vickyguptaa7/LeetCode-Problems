@@ -1,6 +1,6 @@
 class Solution
 {
-    map<string,bool>dp;
+    unordered_map<string,bool>dp;
     public:
         bool isScramble(string x, string y)
         {
