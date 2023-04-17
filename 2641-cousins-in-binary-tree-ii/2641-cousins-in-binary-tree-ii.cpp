@@ -20,7 +20,7 @@ public:
         {
             int size=que.size();
             int sum=0;
-            map<TreeNode*,int>childSum;
+            unordered_map<TreeNode*,int>childSum;
             queue<pair<TreeNode*,TreeNode*>>tempQue;
             while(size--)
             {
