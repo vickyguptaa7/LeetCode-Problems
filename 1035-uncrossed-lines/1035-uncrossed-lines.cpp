@@ -9,17 +9,11 @@ public:
         if(dp[it1][it2]!=-1)
             return dp[it1][it2];
         
-        int ways=helper(it1+1,it2,nums1,nums2,dp);
-        
-        for(int i=it2;i<nums2.size();i++)
-        {
-            if(nums1[it1]==nums2[i])
-            {
-                ways=max(ways,1+helper(it1+1,i+1,nums1,nums2,dp));
-            }
-        }
-        
-        return dp[it1][it2]=ways;
+        if(nums1[it1]==nums2[it2])
+            return dp[it1][it2]=1+helper(it1+1,it2+1,nums1,nums2,dp);
+        else 
+            return dp[it1][it2]=max(helper(it1+1,it2,nums1,nums2,dp),
+                                    helper(it1,it2+1,nums1,nums2,dp));
     }
     
     int maxUncrossedLines(vector<int>& nums1, vector<int>& nums2) {
