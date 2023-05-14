@@ -1,14 +1,14 @@
 class Solution {
 public:
     
-    int helper(int strt,int visited,vector<int>&nums,vector<vector<int>>&dp)
+    int helper(int strt,int visited,vector<int>&nums,vector<int>&dp)
     {
         if(strt==nums.size())
             return 0;
         
         int mx=0;
-        if(dp[visited][strt]!=-1)
-            return dp[visited][strt];
+        if(dp[visited]!=-1)
+            return dp[visited];
 
         for(int i=0;i<nums.size();i++)
         {
@@ -20,12 +20,12 @@ public:
                        helper(strt+1,(visited|(1<<i)|(1<<j)),nums,dp));
             }
         }
-        return dp[visited][strt]=mx;
+        return dp[visited]=mx;
     }
     
     int maxScore(vector<int>& nums) {
         int visited=0;
-        vector<vector<int>>dp(1<<15,vector<int>(8,-1));
+        vector<int>dp(1<<14,-1);
         return helper(0,visited,nums,dp);
     }
 };
