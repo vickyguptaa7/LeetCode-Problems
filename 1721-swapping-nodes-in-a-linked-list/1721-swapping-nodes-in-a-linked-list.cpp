@@ -10,23 +10,32 @@
  */
 class Solution {
 public:
+    int findLen(ListNode*head)
+    {
+        int len=0;
+        while(head!=nullptr)
+        {
+            head=head->next;
+            len++;
+        }
+        return len;
+    }
+    ListNode* findKthNode(ListNode*head,int k)
+    {
+        int it=k-1;
+        while(it)
+        {
+            head=head->next;
+            --it;
+        }
+        return head;
+    }
     ListNode* swapNodes(ListNode* head, int k) {
-        ListNode*slow=head,*fast=head,*firstK=nullptr;
-        k--;
-        int temp=k;
-        while(temp--)
-        {
-            fast=fast->next;
-        }
-        firstK=fast;
-        while(fast->next)
-        {
-            slow=slow->next;
-            fast=fast->next;
-        }
-        temp=firstK->val;
-        firstK->val=slow->val;
-        slow->val=temp;
+        ListNode*node1=findKthNode(head,k);
+        ListNode*node2=findKthNode(head,findLen(head)-k+1);
+        int temp=node1->val;
+        node1->val=node2->val;
+        node2->val=temp;
         return head;
     }
 };
