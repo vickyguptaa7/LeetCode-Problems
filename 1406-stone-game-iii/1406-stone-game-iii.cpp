@@ -11,8 +11,9 @@ public:
         if(dp[strt][isAlice]!=-1)
             return dp[strt][isAlice];
         
-        int val=isAlice?-1e9:1e9,sum=0;
-        for(int i=strt;i<min(strt+3,(int)stoneValue.size());i++)
+        int val=isAlice?-1e9:1e9,sum=0,n=stoneValue.size();
+        int end=min(strt+3,n);
+        for(int i=strt;i<end;i++)
         {
             sum+=stoneValue[i];
             if(isAlice)
