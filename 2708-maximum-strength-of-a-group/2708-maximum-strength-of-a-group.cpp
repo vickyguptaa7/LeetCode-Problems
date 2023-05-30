@@ -17,7 +17,6 @@ class Solution
 
     long long maxStrength(vector<int> &nums)
     {
-        int mx=*max_element(nums.begin(),nums.end());
         long long res=-1e18;
         helper(0,nums,-1e18,res);
         return res;
