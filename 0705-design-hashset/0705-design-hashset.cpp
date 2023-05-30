@@ -1,8 +1,7 @@
 class MyHashSet {
 public:
-    vector<int>hset;
+    bitset<1000001>hset;
     MyHashSet() {
-        hset.resize(1e6+1,0);
     }
     
     void add(int key) {
