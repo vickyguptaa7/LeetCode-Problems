@@ -1,7 +1,7 @@
 class RandomizedCollection {
 public:
     
-    map<int,set<int>>mset;
+    unordered_map<int,set<int>>mset;
     vector<int>nums;
     int size;
     RandomizedCollection() {
