@@ -1,7 +1,7 @@
 class Solution {
 public:
     
-    int helper(int it1,vector<int>&arr1,vector<int>&arr2,map<pair<int,int>,int>&dp,int prev)
+    int helper(int it1,vector<int>&arr1,vector<int>&arr2,unordered_map<int,int>dp[],int prev)
     {
         if(it1==arr1.size())
         {
@@ -11,25 +11,25 @@ public:
         if(indx==arr2.size()&&arr1[it1]<=prev)
             return 1e9;
         
-        if(dp.count({it1,prev}))
-            return dp[{it1,prev}];
+        if(dp[it1].count(prev))
+            return dp[it1][prev];
         
-        int ways1=1e9,ways2=1e9;
+        int ways=1e9;
         if(arr1[it1]>prev)
         {
-            ways1=min(ways1,helper(it1+1,arr1,arr2,dp,arr1[it1]));
+            ways=min(ways,helper(it1+1,arr1,arr2,dp,arr1[it1]));
         }
 
         if(indx<arr2.size())
         {
-            ways2=min(ways2,helper(it1+1,arr1,arr2,dp,arr2[indx])+1);
+            ways=min(ways,helper(it1+1,arr1,arr2,dp,arr2[indx])+1);
         }
-        return dp[{it1,prev}]=min(ways1,ways2);
+        return dp[it1][prev]=ways;
     }
     
     int makeArrayIncreasing(vector<int>& arr1, vector<int>& arr2) {
         sort(arr2.begin(),arr2.end());
-        map<pair<int,int>,int>dp;
+        unordered_map<int,int>dp[arr1.size()+1];
         int cost=helper(0,arr1,arr2,dp,-1);
         return cost==1e9?-1:cost;
     }
