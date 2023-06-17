@@ -1,7 +1,7 @@
 class Solution {
 public:
     
-    int helper(int it1,vector<int>&arr1,vector<int>&arr2,unordered_map<int,int>dp[],int prev)
+    int helper(int it1,vector<int>&arr1,vector<int>&arr2,map<int,int>dp[],int prev)
     {
         if(it1==arr1.size())
         {
@@ -29,7 +29,7 @@ public:
     
     int makeArrayIncreasing(vector<int>& arr1, vector<int>& arr2) {
         sort(arr2.begin(),arr2.end());
-        unordered_map<int,int>dp[arr1.size()+1];
+        map<int,int>dp[arr1.size()+1];
         int cost=helper(0,arr1,arr2,dp,-1);
         return cost==1e9?-1:cost;
     }
