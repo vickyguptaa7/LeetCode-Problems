@@ -9,15 +9,16 @@ public:
         }
         if(dp[strt][s][b]!=-1)
             return dp[strt][s][b];
-        
-        int oper=max(helper(strt+1,words[strt][0]-'a',b,words,dp),helper(strt+1,s,words[strt].back()-'a',words,dp));
+        int op1=helper(strt+1,words[strt][0]-'a',b,words,dp);
+        int op2=helper(strt+1,s,words[strt].back()-'a',words,dp);
+        int oper=max(op1,op2);
         if(s+'a'==words[strt].back())
         {
-            oper=max(oper,helper(strt+1,words[strt][0]-'a',b,words,dp)+1);
+            oper=max(oper,op1+1);
         }
         if(b+'a'==words[strt][0])
         {
-            oper=max(oper,helper(strt+1,s,words[strt].back()-'a',words,dp)+1);
+            oper=max(oper,op2+1);
         }
         return dp[strt][s][b]=oper;
     }
