@@ -1,58 +1,35 @@
+class Compare {
+    public:
+       bool operator()(pair<int,int>& a, pair<int,int>& b){
+         return (a.first>b.first)||(a.first==b.first&&a.second>b.second);
+      }
+};
 class Solution {
 public:
     long long totalCost(vector<int>& costs, int k, int candidates) {
-        map<int,set<int>>first,last;
+        priority_queue<pair<int,int>,vector<pair<int,int>>,Compare>pque;
         int n=costs.size();
-        for(int i=0;i<candidates;i++)first[costs[i]].insert(i);
-        for(int i=n-candidates;i<n;i++)last[costs[i]].insert(i);
-        int left=candidates,right=n-candidates-1;
-        long long curr=0;
+        for(int i=0;i<candidates;i++)pque.push({costs[i],i});
+        for(int i=max(n-candidates,candidates);i<n;i++)pque.push({costs[i],i});
+        int left=candidates,right=max(n-candidates-1,candidates-1);
+        long long cost=0;
         while(k--)
         {
-            if(!first.empty()&&(last.empty()||first.begin()->first<=last.begin()->first))
+            auto curr=pque.top();
+            pque.pop();
+            cost+=curr.first;
+            if(left>right)continue;
+            if(curr.second<left)
             {
-                curr+=first.begin()->first;
-                // cout<<first.begin()->first<<"\n";
-                int indx=*first.begin()->second.begin();
-                first.begin()->second.erase(indx);
-                if(last.begin()->first==first.begin()->first)
-                {
-                    last.begin()->second.erase(indx);
-                    if(last.begin()->second.empty())
-                        last.erase(last.begin()->first);
-                }
-                if(first.begin()->second.empty())
-                    first.erase(first.begin()->first);
-                
-                if(left<=right)
-                {
-                    first[costs[left]].insert(left);
-                    left++;
-                }
+                pque.push({costs[left],left});
+                left++;
             }
             else 
             {
-                curr+=last.begin()->first;
-                // cout<<last.begin()->first<<"\n";
-                int indx=*last.begin()->second.begin();
-                last.begin()->second.erase(indx);
-                if(last.begin()->first==first.begin()->first)
-                {
-                    first.begin()->second.erase(indx);
-                    if(first.begin()->second.empty())
-                        first.erase(first.begin()->first);
-                }
-                
-                if(last.begin()->second.empty())
-                    last.erase(last.begin()->first);
-                
-                if(left<=right)
-                {
-                    last[costs[right]].insert(right);
-                    right--;
-                }
+                pque.push({costs[right],right});
+                right--;
             }
         }
-        return curr;
+        return cost;
     }
 };
