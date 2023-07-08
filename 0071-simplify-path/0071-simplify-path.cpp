@@ -5,24 +5,20 @@ class Solution
         {
             vector<string> st;
             string curr;
-            path += "/";
             for (int i = 0; i < path.size(); i++)
             {
                 if (path[i] == '/')
                 {
-                    if (curr.empty() || curr == ".")
-                    {
-                        curr = "";
-                        continue;
-                    }
                     if (curr == "..")
                     {
                         if (!st.empty())
                             st.pop_back();
-                        curr = "";
-                        continue;
                     }
-                    st.push_back(curr);
+                    else
+                    {
+                        if (!curr.empty() && curr != ".")
+                            st.push_back(curr);
+                    }
                     curr = "";
                 }
                 else
@@ -30,10 +26,21 @@ class Solution
                     curr += path[i];
                 }
             }
-            string result;
-            for (auto x: st)
+            if (curr == "..")
             {
-                result += "/" + x;
+                if (!st.empty())
+                    st.pop_back();
+            }
+            else
+            {
+                if (!curr.empty() && curr != ".")
+                    st.push_back(curr);
+            }
+            string result = "";
+            for (int i = 0; i < st.size(); i++)
+            {
+                result += "/";
+                result += st[i];
             }
             return result.empty() ? "/" : result;
         }
