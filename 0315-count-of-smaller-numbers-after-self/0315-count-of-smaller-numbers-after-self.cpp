@@ -3,7 +3,7 @@ class Solution {
     void mergeArr(vector<pair<int,int>>&arr,int start,int end,vector<int>&result)
     {
         int mid=(start+end)/2;
-        vector<pair<int,int>>temp;
+        vector<pair<int,int>>temp(end-start+1);
         int it1=mid,it2=end;
         while(it1>=start&&it2>=mid+1)
         {
@@ -17,29 +17,30 @@ class Solution {
                 it2--;
             }
         }
-        it1=start,it2=mid+1;    
+        it1=start,it2=mid+1;
+        int it3=0;    
         while(it1<=mid&&it2<=end)
         {
             if(arr[it1].first>arr[it2].first)
             {
-                temp.push_back(arr[it2]);
+                temp[it3++]=arr[it2];
                 it2++;
             }
             else
             {
-                temp.push_back(arr[it1]);
+                temp[it3++]=arr[it1];
                 it1++;
             }
             
         }
         while(it1<=mid)
         {
-            temp.push_back(arr[it1]);
+            temp[it3++]=arr[it1];
             it1++;
         }
         while(it2<=end)
         {
-            temp.push_back(arr[it2]);
+            temp[it3++]=arr[it2];
             it2++;
         }
         for(int i=start;i<=end;i++)arr[i]=temp[i-start];
