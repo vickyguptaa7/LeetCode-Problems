@@ -35,10 +35,8 @@ class Solution
                 return head;
             Node *nhead = head, *tail = head;
             addChild(head,tail);
-            cout << nhead->val << " ";
             while (head)
             {
-                cout << head->val << " ";
                 tail->next = head;
                 head->prev = tail;
                 tail = tail->next;
@@ -51,7 +49,6 @@ class Solution
                 head->child = nullptr;
                 head = head->next;
             }
-            cout<<"\n";
             return nhead;
         }
 };
