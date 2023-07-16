@@ -19,24 +19,38 @@ public:
     Node* copyRandomList(Node* head) {
         if(!head)
             return nullptr;
-        map<Node*,Node*>mpp;
-        Node*curr=head->next,*nhead=new Node(head->val),*tail=nhead;
-        mpp[head]=nhead;
+        Node*curr=head;
         while(curr)
         {
-            tail->next=new Node(curr->val);
-            tail=tail->next;
-            mpp[curr]=tail;
-            curr=curr->next;
+            Node*newNode=new Node(curr->val);
+            newNode->next=curr->next;
+            curr->next=newNode;
+            curr=curr->next->next;
         }
+        
         curr=head;
-        Node *ncurr=nhead;
         while(curr)
         {
-            ncurr->random=mpp[curr->random];
-            curr=curr->next;
-            ncurr=ncurr->next;
+            if(curr->random)
+            {
+                curr->next->random=curr->random->next;
+            }
+            else
+            {
+                curr->next->random=nullptr;
+            }
+            curr=curr->next->next;
         }
+        curr=head->next;
+        Node*nhead=head->next;
+        while(curr&&curr->next)
+        {
+            head->next=curr->next;
+            head=head->next;
+            curr->next=curr->next->next;
+            curr=curr->next;
+        }
+        head->next=nullptr;
         return nhead;
     }
 };
