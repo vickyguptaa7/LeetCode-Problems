@@ -2,7 +2,7 @@ class Solution {
 public:
     string removeDuplicates(string s) {
         string ns;
-        for(auto x:s)
+        for(auto &x:s)
         {
             if(!ns.empty()&&ns.back()==x)
             {
