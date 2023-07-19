@@ -1,27 +1,35 @@
-bool comp(vector<int>&a,vector<int>&b)
+bool mycomp(vector<int>&a,vector<int>&b)
 {
-    return a[0]<b[0];
-}
-
-class Solution {
-public:
-    
-    int helper(int indx,vector<vector<int>>&intervals,vector<int>&dp)
+    if(a[1]!=b[1])
     {
-        if(indx==intervals.size())
-            return 0;
-        if(dp[indx]!=-1)
-            return dp[indx];
-        int minRemove=1+helper(indx+1,intervals,dp);
-        vector<int>temp={intervals[indx][1],INT_MIN};
-        int nindx=lower_bound(intervals.begin(),intervals.end(),temp)-
-            intervals.begin();
-        return dp[indx]=min(minRemove,nindx-indx-1+helper(nindx,intervals,dp));
+        return a[1]<b[1];
+    }
+    else 
+    {
+        return a[0]<b[0];
     }
     
+}
+class Solution {
+public:
     int eraseOverlapIntervals(vector<vector<int>>& intervals) {
-        sort(intervals.begin(),intervals.end(),comp);
-        vector<int>dp(intervals.size(),-1);
-        return helper(0,intervals,dp);
+        sort(intervals.begin(),intervals.end(),mycomp);
+        stack<vector<int>>stack;
+        stack.push(intervals[0]);
+        int n=intervals.size();
+        int counter=0;
+        for(int i=1;i<n;i++)
+        {
+            vector<int>intr=stack.top();
+            if(intr[1]>intervals[i][0])
+            {
+                counter++;
+            }
+            else
+            {
+                stack.push(intervals[i]);
+            }
+        }
+        return counter;
     }
 };
