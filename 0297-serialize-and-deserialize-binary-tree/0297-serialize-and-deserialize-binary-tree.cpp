@@ -19,9 +19,8 @@ public:
             +serialize(root->left)+" "+serialize(root->right);
         return result;
     }
-
-    // Decodes your encoded data to tree.
-    TreeNode* deserialize(string data) {
+    TreeNode*helper(string &data)
+    {
         string word;
         while(indx<data.size()&&data[indx]!=' ')
         {
@@ -34,7 +33,11 @@ public:
         TreeNode*root= new TreeNode(stoi(word));
         root->left=deserialize(data);
         root->right=deserialize(data);
-        return root;
+        return root; 
+    }
+    // Decodes your encoded data to tree.
+    TreeNode* deserialize(string data) {
+        return helper(data);
     }
 };
 
