@@ -2,23 +2,23 @@ class Solution {
 public:
     
     int helper(int sIndx,int eIndx,bool isPlayerOne,vector<int>&nums,
-               vector<vector<vector<int>>>&dp)
+               vector<vector<int>>&dp)
     {
         if(sIndx>eIndx)
             return 0;
         
-        if(dp[sIndx][eIndx][isPlayerOne]!=-1)
-            return dp[sIndx][eIndx][isPlayerOne];
+        if(dp[sIndx][eIndx]!=-1)
+            return dp[sIndx][eIndx];
         
         if(isPlayerOne)
         {
-            return dp[sIndx][eIndx][isPlayerOne]=
+            return dp[sIndx][eIndx]=
                 max(nums[sIndx]+helper(sIndx+1,eIndx,!isPlayerOne,nums,dp),
                       nums[eIndx]+helper(sIndx,eIndx-1,!isPlayerOne,nums,dp));
         }
         else
         {
-            return dp[sIndx][eIndx][isPlayerOne]=
+            return dp[sIndx][eIndx]=
                 min(helper(sIndx+1,eIndx,!isPlayerOne,nums,dp),
                       helper(sIndx,eIndx-1,!isPlayerOne,nums,dp));
         }
@@ -27,7 +27,7 @@ public:
     bool PredictTheWinner(vector<int>& nums) {
         int n=nums.size();
         
-        vector<vector<vector<int>>>dp(n,vector<vector<int>>(n,vector<int>(2,-1)));
+        vector<vector<int>>dp(n,vector<int>(n,-1));
         
         int playerOneScore=helper(0,n-1,1,nums,dp);
         
