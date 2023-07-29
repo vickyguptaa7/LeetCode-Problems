@@ -10,12 +10,12 @@ class Solution {
         visited[src]=true;
         for(auto child:list[src])
         {
-            if(visited[child])
+            if(child==par)
             {
-                if(child!=par)
-                    return true;
                 continue;
             }
+            if(visited[child])
+                return true;
             
             if(helper(child,src,list,visited))
                 return true;
