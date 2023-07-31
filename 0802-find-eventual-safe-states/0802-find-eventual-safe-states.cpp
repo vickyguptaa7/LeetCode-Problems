@@ -1,36 +1,50 @@
 class Solution {
-public:
     
-    bool dfs(int src,vector<vector<int>>&list,vector<int>&visit,vector<int>&recurVisit)
+    bool dfsCycleDetect(int src,vector<int>&visited
+                        ,vector<int>&recurVisited,
+                        vector<int>&isCycle,vector<vector<int>>&list)
     {
-        visit[src]=true;
-        recurVisit[src]=true;
+        visited[src]=true;
+        recurVisited[src]=true;
         for(auto child:list[src])
         {
-            if(visit[child])
+            if(visited[child])
             {
-                if(recurVisit[child])
-                    return true;
+                if(recurVisited[child]||isCycle[child])
+                {
+                    recurVisited[src]=false;
+                    return isCycle[src]=1;
+                }
                 continue;
             }
-            if(dfs(child,list,visit,recurVisit))
-                return true;
+            if(dfsCycleDetect(child,visited,recurVisited,isCycle,list))
+            {
+                recurVisited[src]=false;
+                return isCycle[src]=1;
+            }
         }
-        recurVisit[src]=false;
+        recurVisited[src]=false;
         return false;
     }
     
+public:
     vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
-        vector<int>visit(graph.size(),0),recurVisit(graph.size(),0);
-        for(int i=0;i<graph.size();i++)
+        int n=graph.size();
+        vector<int>isCycle(n,0);
+        vector<int>visited(n,0);
+        vector<int>recurVisit(n,0);
+        for(int i=0;i<n;i++)
         {
-            if(visit[i])continue;
-            dfs(i,graph,visit,recurVisit);
+            if(visited[i])
+                continue;
+            dfsCycleDetect(i,visited,recurVisit,isCycle,graph);
         }
-        vector<int>safe;
-        for(int i=0;i<graph.size();i++)
-            if(!recurVisit[i])
-                safe.push_back(i);
-        return safe;
+        vector<int>result;
+        for(int i=0;i<n;i++)
+        {
+            if(isCycle[i])continue;
+            result.push_back(i);
+        }
+        return result;
     }
 };
