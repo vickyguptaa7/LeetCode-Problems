@@ -2,8 +2,8 @@ class Solution {
 public:
     
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-        set<string>oset(wordList.begin(),wordList.end());
-        map<string,bool>visited;
+        unordered_set<string>oset(wordList.begin(),wordList.end());
+        unordered_map<string,bool>visited;
         queue<string>que;
         que.push(beginWord);
         int length=1;
