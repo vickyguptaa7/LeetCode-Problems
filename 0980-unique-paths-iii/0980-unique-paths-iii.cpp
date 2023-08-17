@@ -1,43 +1,46 @@
 class Solution {
+    vector<int>moveX={1,-1,0,0};
+    vector<int>moveY={0,0,-1,1};
 public:
-    vector<int>moveX={0,0,1,-1},moveY={1,-1,0,0};
-    int helper(int x,int y,int nonObstacle,vector<vector<int>>&grid)
+    
+    int helper(int x,int y,int cntr,vector<vector<int>>&grid,vector<vector<int>>&visited)
     {
-        int rows=grid.size(),cols=grid[0].size();
-        if(grid[x][y]==2)
-            return nonObstacle==1;
-        int curr=grid[x][y];
-        grid[x][y]=3;
+        if(cntr==0)
+        {
+            if(grid[x][y]==2)
+                return 1;
+            return 0;
+        }
+        int n=grid.size(),m=grid[0].size();
+        visited[x][y]=1;
         int ways=0;
         for(int i=0;i<4;i++)
         {
-            int _x=moveX[i]+x,_y=moveY[i]+y;
-            if(_x>=rows||_y>=cols||_x<0||_y<0||
-               grid[_x][_y]==3||grid[_x][_y]==-1)
+            int _x=x+moveX[i],_y=y+moveY[i];
+            if(_x>=n||_y>=m||_x<0||_y<0||visited[_x][_y]||grid[_x][_y]==-1)
                 continue;
-            ways+=helper(_x,_y,nonObstacle-1,grid);
-                
+            ways+=helper(_x,_y,cntr-1,grid,visited);
         }
-        grid[x][y]=curr;
+        visited[x][y]=0;
         return ways;
     }
     
     int uniquePathsIII(vector<vector<int>>& grid) {
-        int rows=grid.size(),cols=grid[0].size();
-        int start_x=0,start_y=0,nonObstacle=0;
-        for(int i=0;i<rows;i++)
+        queue<pair<int,int>>que;
+        int n=grid.size(),m=grid[0].size();
+        pair<int,int>start;
+        int cntr=0;
+        vector<vector<int>>visited(n,vector<int>(m,0));
+        for(int i=0;i<n;i++)
         {
-            for(int j=0;j<cols;j++)
+            for(int j=0;j<m;j++)
             {
                 if(grid[i][j]==1)
-                {
-                    start_x=i;
-                    start_y=j;
-                }
-                if(grid[i][j]!=-1)
-                    nonObstacle++;
+                    start={i,j};
+                else if(grid[i][j]==0)
+                    cntr++;
             }
         }
-        return helper(start_x,start_y,nonObstacle,grid);
+        return helper(start.first,start.second,cntr+1,grid,visited);
     }
 };
