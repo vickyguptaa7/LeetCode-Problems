@@ -11,9 +11,9 @@ public:
 	/* if x is present in arr[] then returns the count
 		of occurrences of x, otherwise returns 0. */
 	int count(int arr[], int n, int x) {
-	    int occr=0;
-	    for(int i=0;i<n;i++)occr+=arr[i]==x;
-	    return occr;
+	    int sindx=lower_bound(arr,arr+n,x)-arr;
+	    int eindx=upper_bound(arr,arr+n,x)-arr;
+	    return eindx-sindx;
 	}
 };
 
