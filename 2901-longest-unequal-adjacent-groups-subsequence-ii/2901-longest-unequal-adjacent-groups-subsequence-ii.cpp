@@ -68,8 +68,8 @@ public:
         //     cout<<"\n";
         // }
         // res.push_back(words[0]);
-        for(auto x:par)cout<<x<<" ";
-        cout<<"\n";
+        // for(auto x:par)cout<<x<<" ";
+        // cout<<"\n";
         int j=par[0];
         while(j<n)
         {
