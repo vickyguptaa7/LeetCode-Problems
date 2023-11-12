@@ -3,7 +3,7 @@ public:
     int numBusesToDestination(vector<vector<int>>& routes, int source, int target) {
         if(target==source)
             return 0;
-        map<int,vector<int>>nroutes;
+        unordered_map<int,vector<int>>nroutes;
         for(int i=0;i<routes.size();i++)
         {
             sort(routes[i].begin(),routes[i].end());
@@ -11,7 +11,7 @@ public:
         }
         queue<pair<int,int>>que;
         que.push({source,0});
-        set<int>visited;
+        unordered_set<int>visited;
         visited.insert(source);
         while(!que.empty())
         {
