@@ -79,12 +79,12 @@ public:
     
     int findMaximumXOR(vector<int>& nums) {
         Trie trie;
-        for(auto num:nums)
+        for(auto& num:nums)
         {
             trie.insert(decimalToBinary(num));
         }
         int result=0;
-        for(auto num:nums)
+        for(auto& num:nums)
         {
             result=max(result,trie.search(decimalToBinary(num)));
         }
