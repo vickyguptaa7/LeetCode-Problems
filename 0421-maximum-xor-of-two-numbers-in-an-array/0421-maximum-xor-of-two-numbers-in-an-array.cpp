@@ -3,7 +3,7 @@ public:
     int findMaximumXOR(vector<int>& nums) {
         int result=0;
         int mask=0;
-        set<int>prefixs;
+        unordered_set<int>prefixs;
         for(int i=30;i>=0;i--)
         {
             mask=mask|(1<<i);
