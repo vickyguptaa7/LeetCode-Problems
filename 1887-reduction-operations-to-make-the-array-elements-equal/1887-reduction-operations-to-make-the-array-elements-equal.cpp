@@ -1,14 +1,16 @@
 class Solution {
 public:
     int reductionOperations(vector<int>& nums) {
-        map<int,int>freq;
-        for(auto &num:nums)freq[num]++;
-        int oper=0,count=0;
-        for(auto iter=freq.rbegin();iter!=freq.rend();iter++)
+        sort(nums.begin(),nums.end(),greater<int>());
+        int count=1,oper=0;
+        for(int i=1;i<nums.size();i++)
         {
-            count+=iter->second;
-            oper+=count;
+            if(nums[i]!=nums[i-1])
+            {
+                oper+=count;
+            }
+            count++;
         }
-        return oper-count;
+        return oper;
     }
 };
