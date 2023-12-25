@@ -1,7 +1,7 @@
 class Solution {
 public:
     
-    int helper(int indx,string&s,vector<int>&dp)
+    int helper(int indx,string &s,vector<int>&dp)
     {
         if(indx==s.size())
             return 1;
@@ -12,12 +12,16 @@ public:
         if(dp[indx]!=-1)
             return dp[indx];
         
-        int ways=helper(indx+1,s,dp);
-        if(indx+1!=s.size()&&stoi(s.substr(indx,2))<=26)
+        int count=helper(indx+1,s,dp);
+        if(indx+1<s.size())
         {
-            ways+=helper(indx+2,s,dp);
+            string nums=s.substr(indx,2);
+            if(stoi(nums)<=26)
+            {
+                count+=helper(indx+2,s,dp);
+            }
         }
-        return dp[indx]=ways;
+        return dp[indx]=count;
     }
     
     int numDecodings(string s) {
