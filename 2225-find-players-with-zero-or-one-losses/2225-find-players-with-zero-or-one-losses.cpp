@@ -1,26 +1,23 @@
 class Solution {
 public:
     vector<vector<int>> findWinners(vector<vector<int>>& matches) {
-        int n=matches.size();
-        map<int,int>stat;
-        vector<vector<int>>res;
-        vector<int>win,lose;
-        for(int i=0;i<n;i++)
+        map<int,int>win,loose;
+        for(auto match:matches)
         {
-            stat[matches[i][0]];
-            stat[matches[i][1]]++;
+            win[match[0]]++;
+            loose[match[1]]++;
         }
-        for(auto x:stat)
+        vector<int>noLoose,oneLoose;
+        for(auto w:win)
         {
-            if(x.second==0)
-                win.push_back(x.first);
-            else if(x.second==1) 
-                lose.push_back(x.first);
+            if(!loose.count(w.first))
+                noLoose.push_back(w.first);
         }
-        sort(win.begin(),win.end());
-        sort(lose.begin(),lose.end());
-        res.push_back(win);
-        res.push_back(lose);
-        return res;
+        for(auto l:loose)
+        {
+            if(l.second==1)
+                oneLoose.push_back(l.first);
+        }
+        return {noLoose,oneLoose};
     }
 };
