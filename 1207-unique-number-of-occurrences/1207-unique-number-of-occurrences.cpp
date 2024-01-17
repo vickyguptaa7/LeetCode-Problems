@@ -1,18 +1,15 @@
 class Solution {
 public:
     bool uniqueOccurrences(vector<int>& arr) {
-        map<int,int>freq;
-        for(auto x:arr)
+        vector<int>freq(2e3+4,0);
+        for(auto &x:arr)freq[x+1e3+2]++;
+        sort(freq.begin(),freq.end());
+        for(int i=1;i<freq.size();i++)
         {
-            freq[x]++;
+            if(freq[i]==0)continue;
+            if(freq[i]==freq[i-1])
+                return false;
         }
-        set<int>oset;
-        for(auto x:freq)
-        {
-            oset.insert(x.second);
-        }
-        if(freq.size()==oset.size())
-            return true;
-        return false;
+        return true;
     }
 };
