@@ -1,25 +1,21 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums, int k) {
-        vector<int>bit(30,0);
-        for(auto num:nums)
-        {
-            for(int i=0;i<30;i++)
-                if(num&(1<<i))
-                    bit[i]++;
-        }
         int oper=0;
-        for(int i=0;i<30;i++)
+        for(int i=0;i<21;i++)
         {
-            if(k&(1<<i))
+            int bcnt=0;
+            for(int j=0;j<nums.size();j++)
             {
-                if(!(bit[i]&1))
-                    oper++;
+                bcnt+=(1&(nums[j]>>i));
+            }
+            if(1&(k>>i))
+            {
+                oper+=(bcnt&1)?0:1;
             }
             else
             {
-                if(bit[i]&1)
-                    oper++;
+                oper+=(bcnt&1)?1:0;
             }
         }
         return oper;
