@@ -2,7 +2,7 @@ class Solution {
 public:
     
     long long wonderfulSubstrings(string word) {
-        map<int,int>freq;
+        unordered_map<int,int>freq;
         long long ans=0;
         int pre=0;
         freq[0]=1;
