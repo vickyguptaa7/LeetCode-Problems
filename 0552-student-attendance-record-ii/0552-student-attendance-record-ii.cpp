@@ -26,7 +26,7 @@ public:
     }
     
     int checkRecord(int n) {
-        vector<vector<vector<int>>>dp(n+1,vector<vector<int>>(4,vector<int>(2,-1)));
+        vector<vector<vector<int>>>dp(n,vector<vector<int>>(3,vector<int>(2,-1)));
         return helper(0,0,0,n,dp);
     }
 };
