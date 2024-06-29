@@ -1,7 +1,7 @@
 class Solution {
 public:
     
-    void unionSet(set<int>&a,set<int>&b)
+    void unionSet(unordered_set<int>&a,unordered_set<int>&b)
     {
         for(auto &x:a)
         {
@@ -18,7 +18,7 @@ public:
             in[edge[1]]++;
             list[edge[0]].push_back(edge[1]);
         }
-        set<int>par[n];
+        unordered_set<int>par[n];
         queue<int>que;
         for(int i=0;i<n;i++)
         {
@@ -47,6 +47,7 @@ public:
             {
                 ans[i].push_back(x);
             }
+            sort(ans[i].begin(),ans[i].end());
         }
         return ans;
     }
