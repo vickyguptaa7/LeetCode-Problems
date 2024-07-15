@@ -12,18 +12,18 @@
 class Solution {
 public:
     TreeNode* createBinaryTree(vector<vector<int>>& descriptions) {
-        unordered_map<int,TreeNode*>tree;
-        unordered_map<int,int>parent;
+        TreeNode*tree[100010]={0};
+        int parent[100010]={0};
         for(auto desc:descriptions)
         {
-            if(!tree.count(desc[0]))
+            if(!tree[desc[0]])
             {
                 TreeNode*node=new TreeNode(desc[0]);
                 tree[desc[0]]=node;
             }
             TreeNode*node=tree[desc[0]];
             TreeNode*child=nullptr;
-            if(tree.count(desc[1]))
+            if(tree[desc[1]])
             {
                 child=tree[desc[1]];
             }
@@ -43,7 +43,7 @@ public:
             parent[child->val]=node->val;
         }
         int par=descriptions[0][0];
-        while(parent.count(par))
+        while(parent[par])
         {
             par=parent[par];
         }
