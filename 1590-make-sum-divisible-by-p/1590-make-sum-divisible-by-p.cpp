@@ -4,36 +4,21 @@ public:
         long long sum=accumulate(nums.begin(),nums.end(),0ll);
         if(sum%p==0)
             return 0;
-        unordered_map<int,vector<int>>mmindx;
-        int n=nums.size();
-        int minSize=n;
-        for(int i=0;i<n;i++)
+        
+        map<int,int>freq;
+        int psum=0,rem=sum%p;
+        freq[0]=-1;
+        int res=1e9;
+        for(int i=0;i<nums.size();i++)
         {
-            sum-=nums[i];
-            if(sum%p==0)
+            psum+=nums[i];
+            psum%=p;
+            if(freq.count((psum+(p-rem))%p))
             {
-                minSize=min(minSize,i+1);
+                res=min(res,i-freq[(psum+(p-rem))%p]);
             }
-            mmindx[sum%p].push_back(i+1);
+            freq[psum]=i;
         }
-        sum=0;
-        mmindx[p].push_back(n);
-        for(int i=0;i<n;i++)
-        {
-            sum+=nums[i];
-            sum%=p;
-            if(mmindx.count((p-sum)))
-            {
-                int indx=upper_bound(mmindx[p-sum].begin(),mmindx[p-sum].end()
-                                                  ,i)-mmindx[p-sum].begin();
-                if(indx==mmindx[p-sum].size())
-                {
-                    continue;
-                }
-                indx=mmindx[p-sum][indx];
-                minSize=min(minSize,indx-i-1);
-            }
-        }
-        return minSize==n?-1:minSize;
+        return res>=nums.size()?-1:res;
     }
 };
