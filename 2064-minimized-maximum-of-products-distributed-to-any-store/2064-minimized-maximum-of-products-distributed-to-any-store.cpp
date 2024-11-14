@@ -5,9 +5,11 @@ public:
     {
         for(int i=0;i<quant.size();i++)
         {
-            n-=ceil(quant[i]/(long double)mid);
+            n-=(quant[i]+mid-1)/mid;
+            if(n<0)
+                return false;
         }
-        return n>=0;
+        return true;
     }
     
     int minimizedMaximum(int n, vector<int>& quantities) {
