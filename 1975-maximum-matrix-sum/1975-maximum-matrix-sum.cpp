@@ -1,22 +1,17 @@
 class Solution {
 public:
     long long maxMatrixSum(vector<vector<int>>& matrix) {
-        int negCnt=0,mnEle=1e9;
-        long long sum=0;
-        for(auto x:matrix)
+        long long sum=0,val=1e9;
+        int isNegC=0;
+        for(auto &mat:matrix)
         {
-            for(auto y:x)
+            for(auto &x:mat)
             {
-                if(y<0)
-                    negCnt++;
-                sum+=abs(y);
-                mnEle=min(abs(y),mnEle);
+                sum+=abs(x);
+                if(x<0)isNegC++;
+                val=min(val,0ll+abs(x));
             }
         }
-        if(negCnt&1)
-        {
-            sum-=2*mnEle;
-        }
-        return sum;
+        return isNegC&1?sum-2*val:sum;
     }
 };
