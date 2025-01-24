@@ -1,50 +1,37 @@
 class Solution {
-    
-    bool dfsCycleDetect(int src,vector<int>&visited
-                        ,vector<int>&recurVisited,
-                        vector<int>&isCycle,vector<vector<int>>&list)
-    {
-        visited[src]=true;
-        recurVisited[src]=true;
-        for(auto child:list[src])
-        {
-            if(visited[child])
-            {
-                if(recurVisited[child]||isCycle[child])
-                {
-                    recurVisited[src]=false;
-                    return isCycle[src]=1;
-                }
-                continue;
-            }
-            if(dfsCycleDetect(child,visited,recurVisited,isCycle,list))
-            {
-                recurVisited[src]=false;
-                return isCycle[src]=1;
-            }
-        }
-        recurVisited[src]=false;
-        return false;
-    }
-    
 public:
     vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
         int n=graph.size();
-        vector<int>isCycle(n,0);
-        vector<int>visited(n,0);
-        vector<int>recurVisit(n,0);
-        for(int i=0;i<n;i++)
+        vector<vector<int>>rgraph(n);
+        queue<int>que;
+        vector<int>inorder(n);
+        for(int i=0;i<graph.size();i++)
         {
-            if(visited[i])
-                continue;
-            dfsCycleDetect(i,visited,recurVisit,isCycle,graph);
+            for(int j=0;j<graph[i].size();j++)
+            {
+                rgraph[graph[i][j]].push_back(i);
+                inorder[i]++;
+            }
+
+            if(graph[i].size()==0)
+            {
+                que.push(i);
+            }
         }
-        vector<int>result;
-        for(int i=0;i<n;i++)
+        vector<int>res;
+        while(!que.empty())
         {
-            if(isCycle[i])continue;
-            result.push_back(i);
+            int curr=que.front();
+            res.push_back(curr);
+            que.pop();
+            for(auto child:rgraph[curr])
+            {
+                inorder[child]--;
+                if(inorder[child]==0)
+                    que.push(child);
+            }
         }
-        return result;
+        sort(res.begin(),res.end());
+        return res;
     }
 };
