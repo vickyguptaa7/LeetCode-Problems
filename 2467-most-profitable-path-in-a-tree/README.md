@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/most-profitable-path-in-a-tree/">2467. Most Profitable Path in a Tree</a></h2><h3>Medium</h3><hr><div><p>There is an undirected tree with <code>n</code> nodes labeled from <code>0</code> to <code>n - 1</code>, rooted at node <code>0</code>. You are given a 2D integer array <code>edges</code> of length <code>n - 1</code> where <code>edges[i] = [a<sub>i</sub>, b<sub>i</sub>]</code> indicates that there is an edge between nodes <code>a<sub>i</sub></code> and <code>b<sub>i</sub></code> in the tree.</p>
+<h2><a href="https://leetcode.com/problems/most-profitable-path-in-a-tree">2467. Most Profitable Path in a Tree</a></h2><h3>Medium</h3><hr><p>There is an undirected tree with <code>n</code> nodes labeled from <code>0</code> to <code>n - 1</code>, rooted at node <code>0</code>. You are given a 2D integer array <code>edges</code> of length <code>n - 1</code> where <code>edges[i] = [a<sub>i</sub>, b<sub>i</sub>]</code> indicates that there is an edge between nodes <code>a<sub>i</sub></code> and <code>b<sub>i</sub></code> in the tree.</p>
 
 <p>At every node <code>i</code>, there is a gate. You are also given an array of even integers <code>amount</code>, where <code>amount[i]</code> represents:</p>
 
@@ -25,17 +25,18 @@
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2022/10/29/eg1.png" style="width: 275px; height: 275px;">
-<pre><strong>Input:</strong> edges = [[0,1],[1,2],[1,3],[3,4]], bob = 3, amount = [-2,4,2,-4,6]
+<img alt="" src="https://assets.leetcode.com/uploads/2022/10/29/eg1.png" style="width: 275px; height: 275px;" />
+<pre>
+<strong>Input:</strong> edges = [[0,1],[1,2],[1,3],[3,4]], bob = 3, amount = [-2,4,2,-4,6]
 <strong>Output:</strong> 6
 <strong>Explanation:</strong> 
 The above diagram represents the given tree. The game goes as follows:
 - Alice is initially on node 0, Bob on node 3. They open the gates of their respective nodes.
-  Alice's net income is now -2.
+  Alice&#39;s net income is now -2.
 - Both Alice and Bob move to node 1. 
 &nbsp; Since they reach here simultaneously, they open the gate together and share the reward.
-&nbsp; Alice's net income becomes -2 + (4 / 2) = 0.
-- Alice moves on to node 3. Since Bob already opened its gate, Alice's income remains unchanged.
+&nbsp; Alice&#39;s net income becomes -2 + (4 / 2) = 0.
+- Alice moves on to node 3. Since Bob already opened its gate, Alice&#39;s income remains unchanged.
 &nbsp; Bob moves on to node 0, and stops moving.
 - Alice moves on to node 4 and opens the gate there. Her net income becomes 0 + 6 = 6.
 Now, neither Alice nor Bob can make any further moves, and the game ends.
@@ -43,8 +44,9 @@ It is not possible for Alice to get a higher net income.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2022/10/29/eg2.png" style="width: 250px; height: 78px;">
-<pre><strong>Input:</strong> edges = [[0,1]], bob = 1, amount = [-7280,2350]
+<img alt="" src="https://assets.leetcode.com/uploads/2022/10/29/eg2.png" style="width: 250px; height: 78px;" />
+<pre>
+<strong>Input:</strong> edges = [[0,1]], bob = 1, amount = [-7280,2350]
 <strong>Output:</strong> -7280
 <strong>Explanation:</strong> 
 Alice follows the path 0-&gt;1 whereas Bob follows the path 1-&gt;0.
@@ -65,4 +67,3 @@ Thus, Alice opens the gate at node 0 only. Hence, her net income is -7280.
 	<li><code>amount.length == n</code></li>
 	<li><code>amount[i]</code> is an <strong>even</strong> integer in the range <code>[-10<sup>4</sup>, 10<sup>4</sup>]</code>.</li>
 </ul>
-</div>
