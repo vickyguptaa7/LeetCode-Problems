@@ -1,64 +1,55 @@
 class Solution {
 public:
-    int pathToRoot(int src,int time,vector<int>list[],map<int,int>&path,vector<int>&visited)
+
+    bool helper1(int src,int par,int time,vector<vector<int>>&list,vector<int>&times)
     {
-        visited[src]=true;
         if(src==0)
         {
-            path[src]=time;
+            times[src]=time;
             return true;
         }
-        for(auto x:list[src])
+        for(auto child:list[src])
         {
-            if(!visited[x]&&pathToRoot(x,time+1,list,path,visited))
+            if(child==par)continue;
+            if(helper1(child,src,time+1,list,times))
             {
-                path[src]=time;
+                times[src]=time;
                 return true;
             }
         }
         return false;
     }
-    int maxProfitDfs(int src,int time,vector<int>list[],vector<int>&visited,vector<int>&amount,
-                     map<int,int>&path)
+
+    int helper2(int src,int par,int time,vector<vector<int>>&list,vector<int>&times,vector<int>&amount)
     {
-        visited[src]=true;
-        int profit=-1e9;
-        for(auto x:list[src])
+        int cost=-1e9;
+        for(auto child:list[src])
         {
-            if(!visited[x])
-            {
-                if(path.count(x)&&path[x]==time)
-                {
-                     profit=max(profit,maxProfitDfs(x,time+1,list,visited,amount,path)
-                                +amount[x]/2);
-                }
-                else if(path.count(x)&&path[x]<time)
-                {
-                     profit=max(profit,maxProfitDfs(x,time+1,list,visited,amount,path));
-                }
-                else 
-                {
-                    profit=max(profit,maxProfitDfs(x,time+1,list,visited,amount,path)
-                               +amount[x]);
-                }
-            }
-                
+            if(child==par)continue;
+            cost=max(cost,helper2(child,src,time+1,list,times,amount));
         }
-        return profit==-1e9?0:profit;
+        cost=cost==-1e9?0:cost;
+        if(time<times[src]||times[src]==-1)
+        {
+            cost+=amount[src];
+        }
+        else if(time==times[src])
+        {
+            cost+=amount[src]/2;
+        }
+        return cost;
     }
+
     int mostProfitablePath(vector<vector<int>>& edges, int bob, vector<int>& amount) {
         int n=edges.size()+1;
-        vector<int>list[n];
-        for(int i=0;i<n-1;i++)
+        vector<vector<int>>list(n);
+        for(auto edge:edges)
         {
-            list[edges[i][0]].push_back(edges[i][1]);
-            list[edges[i][1]].push_back(edges[i][0]);
+            list[edge[0]].push_back(edge[1]);
+            list[edge[1]].push_back(edge[0]);   
         }
-        map<int,int>bobPath;
-        vector<int>visited(n,false);
-        pathToRoot(bob,0,list,bobPath,visited);
-        for(int i=0;i<n;i++)visited[i]=false;
-        int maxProfit=maxProfitDfs(0,1,list,visited,amount,bobPath)+amount[0];
-        return maxProfit;
+        vector<int>time(n,-1);
+        helper1(bob,-1,0,list,time);
+        return helper2(0,-1,0,list,time,amount);
     }
 };
