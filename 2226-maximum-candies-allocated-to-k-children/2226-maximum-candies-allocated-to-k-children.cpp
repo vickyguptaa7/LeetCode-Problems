@@ -1,23 +1,26 @@
 class Solution {
 public:
-    
-    int isValid(int mid,vector<int>&candies,long long k)
+
+    bool check(vector<int>& candies, long long k,int mid)
     {
         if(mid==0)
             return true;
-        for(auto x:candies)
+        for(int i=0;i<candies.size();i++)
         {
-            k-=x/mid;
+            k-=candies[i]/mid;
+            if(k<=0)
+                return true;
         }
-        return k<=0;
+        return false;
     }
-    
+
     int maximumCandies(vector<int>& candies, long long k) {
-        int low=0,high=1e7,ans=0;
+        int low=0,high=*max_element(candies.begin(),candies.end());
+        int ans=0;
         while(low<=high)
         {
             int mid=(low+high)/2;
-            if(isValid(mid,candies,k))
+            if(check(candies,k,mid))
             {
                 ans=mid;
                 low=mid+1;
