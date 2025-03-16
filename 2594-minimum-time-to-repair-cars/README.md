@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-time-to-repair-cars/">2594. Minimum Time to Repair Cars</a></h2><h3>Medium</h3><hr><div><p>You are given an integer array <code>ranks</code> representing the <strong>ranks</strong> of some mechanics. <font face="monospace">ranks<sub>i</sub></font> is the rank of the <font face="monospace">i<sup>th</sup></font> mechanic<font face="monospace">.</font> A mechanic with a rank <code>r</code> can repair <font face="monospace">n</font> cars in <code>r * n<sup>2</sup></code> minutes.</p>
+<h2><a href="https://leetcode.com/problems/minimum-time-to-repair-cars">2594. Minimum Time to Repair Cars</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>ranks</code> representing the <strong>ranks</strong> of some mechanics. <font face="monospace">ranks<sub>i</sub></font> is the rank of the <font face="monospace">i<sup>th</sup></font> mechanic<font face="monospace">.</font> A mechanic with a rank <code>r</code> can repair <font face="monospace">n</font> cars in <code>r * n<sup>2</sup></code> minutes.</p>
 
 <p>You are also given an integer <code>cars</code> representing the total number of cars waiting in the garage to be repaired.</p>
 
@@ -9,7 +9,8 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> ranks = [4,2,3,1], cars = 10
+<pre>
+<strong>Input:</strong> ranks = [4,2,3,1], cars = 10
 <strong>Output:</strong> 16
 <strong>Explanation:</strong> 
 - The first mechanic will repair two cars. The time required is 4 * 2 * 2 = 16 minutes.
@@ -21,7 +22,8 @@ It can be proved that the cars cannot be repaired in less than 16 minutes.​​
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> ranks = [5,1,8], cars = 6
+<pre>
+<strong>Input:</strong> ranks = [5,1,8], cars = 6
 <strong>Output:</strong> 16
 <strong>Explanation:</strong> 
 - The first mechanic will repair one car. The time required is 5 * 1 * 1 = 5 minutes.
@@ -38,4 +40,3 @@ It can be proved that the cars cannot be repaired in less than 16 minutes.​​
 	<li><code>1 &lt;= ranks[i] &lt;= 100</code></li>
 	<li><code>1 &lt;= cars &lt;= 10<sup>6</sup></code></li>
 </ul>
-</div>
