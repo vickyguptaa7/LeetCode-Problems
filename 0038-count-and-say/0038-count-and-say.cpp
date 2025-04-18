@@ -4,33 +4,21 @@ public:
         if(n==1)
         {
             return "1";
-        }else if(n==2)
-        {
-            return "11";
         }
-        
-        string  str="11";
-        n=n-2;
-        while(n--)
+        string str=countAndSay(n-1),nstr="";
+        int iter=0,count=0;
+        while(iter<str.size())
         {
-            string temp;
-            int len=str.length();
-            int counter=1;
-            for(int i=1;i<len;i++)
+            count=1;
+            while(iter+1<str.size()&&str[iter]==str[iter+1])
             {
-                if(str[i-1]==str[i])
-                {
-                    counter++;
-                }
-                else
-                {
-                    temp+=to_string(counter)+str[i-1];
-                    counter=1;
-                }
+                iter++;
+                count++;
             }
-            temp+=to_string(counter)+str[len-1];
-            str=temp;
+            nstr+=to_string(count);
+            nstr+=str[iter];
+            iter++;
         }
-        return str;
+        return nstr;
     }
 };
