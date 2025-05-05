@@ -14,7 +14,7 @@ public:
         }
         if(i==n&&j==n)
         {
-            return true;
+            return 1;
         }
         if(dp[i][j]!=-1)
         {
@@ -24,8 +24,35 @@ public:
         if(i==j)
         {
             // domino
-            ans=(sum(ans,sum(helper(i+1,j+1,n,dp),sum(helper(i+2,j,n,dp),helper(i,j+2,n,dp)))));
+            ans=(sum(ans,sum(helper(i+1,j+1,n,dp),helper(i+2,j,n,dp))));
+            // tromino
+            ans=(sum(ans,sum(helper(i+1,j+2,n,dp),helper(i+2,j+1,n,dp))));
         }
+        else if(i+1==j)
+        {
+            // domino
+            ans=(sum(ans,helper(i+2,j,n,dp)));
+            // tromino
+            ans=(sum(ans,helper(i+2,j+1,n,dp)));
+        }
+        else if(i==j+1)
+        {
+            // domino
+            ans=(sum(ans,helper(i,j+2,n,dp)));
+            // tromino
+            ans=(sum(ans,helper(i+1,j+2,n,dp)));
+        }
+        else if(i>j)
+        {
+            // domino
+            ans=(sum(ans,helper(i,j+2,n,dp)));
+        }
+        else
+        {
+            // domino
+            ans=(sum(ans,helper(i+2,j,n,dp)));
+        }
+        return dp[i][j]=ans;
     }
 
     int numTilings(int n) {
