@@ -1,33 +1,44 @@
 class Solution {
+    int mod=1e9+7;
 public:
-    
-    int helper(int x,bool isTromino,int n,vector<vector<int>>&dp)
+    int sum(long long a,long long b)
     {
-        if(x>=n)
+        return ((a%mod)+(b%mod))%mod;
+    }
+
+    int helper(int i,int j,int n,vector<vector<int>>&dp)
+    {
+        if(i>n||j>n)
         {
-            if(x==n&&!isTromino)
-                return 1;
-            return 0;
+            return false;
         }
-        
-        if(dp[x][isTromino]!=-1)
-            return dp[x][isTromino];
-        
-        int mod=1e9+7;
-        
-        if(isTromino)
+        if(i==n&&j==n)
         {
-            return dp[x][isTromino]=((long long)helper(x+1,1,n,dp)+
-                                     helper(x+2,0,n,dp))%mod;
+            return true;
         }
-        else 
+        if(dp[i][j]!=-1)
         {
-            return dp[x][isTromino]=(helper(x+1,0,n,dp)+helper(x+2,0,n,dp)+
-                                     2ll*helper(x+1,1,n,dp))%mod;
+            return dp[i][j];
+        }
+        int ans=0,mod=1e9+7;
+        if(i==j)
+        {
+            // domino
+            ans=(sum(ans,sum(helper(i+1,j+1,n,dp),sum(helper(i+2,j,n,dp),helper(i,j+2,n,dp)))));
         }
     }
+
     int numTilings(int n) {
-        vector<vector<int>>dp(n+1,vector<int>(2,-1));
+        vector<vector<int>>dp(n+1,vector<int>(n+1,-1));
         return helper(0,0,n,dp);
     }
 };
+// possible moves
+// domino
+// | only when the i==j (+1,+1)
+// - any time (+2,0) (0,+2)
+
+// tromino 
+// _| only when i == j+1  (+1,+2)
+// -| only when i+1 == j. (+2,+1)
+// |- or |_ only when i==j both
