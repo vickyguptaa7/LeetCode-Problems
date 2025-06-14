@@ -1,36 +1,33 @@
 class Solution {
 public:
     int minMaxDifference(int num) {
-        string str=to_string(num);
-        vector<int>digFreq(10,0);
-        bool isFind=false;
-        int mxFreq=1;
-        char chnge;
-        for(int i=0;i<str.size();i++)
+        string s=to_string(num),t=to_string(num);
+        char mnch='#',mxch='#';
+        for(int i=0;i<s.size();i++)
         {
-            digFreq[str[i]-'0']++;
-            if(!isFind&&str[i]!='9'){
-                isFind=true;
-                chnge=str[i];
+            if(s[i]!='9'&&mxch=='#')
+            {
+                mxch=s[i];
+                s[i]='9';
             }
-            mxFreq=max(mxFreq,digFreq[str[i]-'0']);
+            else if(s[i]==mxch)
+            {
+                s[i]='9';
+            }
         }
-        int mx=num;
-        if(isFind)
+        for(int i=0;i<s.size();i++)
         {
-            for(auto &x:str){
-                if(chnge==x){
-                    x='9';
-                }
+            if(t[i]!='0'&&mnch=='#')
+            {
+                mnch=t[i];
+                t[i]='0';
             }
-            mx=stoi(str);
+            else if(t[i]==mnch)
+            {
+                t[i]='0';
+            }
         }
-        str=to_string(num);
-        chnge=str[0];
-        for(auto &x:str){
-            if(chnge==x)x='0';
-        }
-                int mn=stoi(str);
-        return mx-mn;
+
+        return stoi(s)-stoi(t);
     }
 };
