@@ -1,45 +1,39 @@
-typedef long long ll;
+class Solution {
+public:
 
-class Solution
-{
-    public:
-        ll sum(ll a, ll b, ll mod = 1e9 + 7)
-        {
-            return (a + b) % mod;
-        }
-    ll product(ll a, ll b, ll mod = 1e9 + 7)
+    long long prod(long long a,long long b,int mod)
     {
-        return (((ll) a % mod) *((ll) b % mod)) % mod;
+        return ((a%mod)*(b%mod))%mod;
     }
-    ll power(ll a, ll b, ll mod = 1e9 + 7)
+
+    long long binpow(long long a,long long b,int mod)
     {
-        ll result = 1;
-        while (b != 0)
+        if(b==0)
         {
-            if (b & 1)
-                result = product(result, a, mod);
-            a = product(a, a, mod);
-            b /= 2;
+            return 1;
         }
-        return result;
+        long long temp=binpow(a,b/2,mod);
+        if(b&1)
+        {
+            return prod(prod(temp,temp,mod),a,mod);
+        }
+        return prod(temp,temp,mod);
     }
-    int numSubseq(vector<int> &nums, int target)
+
+    long long add(long long a,long long b,int mod)
     {
-        sort(nums.begin(), nums.end());
-        ll result = 0;
-        int left=0,right=nums.size()-1;
-        while(left<=right)
+        return (a%mod+b%mod)%mod;
+    }
+
+    int numSubseq(vector<int>& nums, int target) {
+        sort(nums.begin(),nums.end());
+        int cnt=0;
+        for(int i=0;i<nums.size();i++)
         {
-            if(nums[left]+nums[right]>target)
-            {
-                right--;
-            }
-            else
-            {
-                result=sum(result,power(2,right-left));
-                left++;
-            }
+            int indx=upper_bound(nums.begin(),nums.end(),target-nums[i])-nums.begin();
+            if(indx<=i)break;
+            cnt=add(cnt,binpow(2,indx-i-1,1e9+7),1e9+7);
         }
-        return result;
+        return cnt;
     }
 };
