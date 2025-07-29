@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/">2411. Smallest Subarrays With Maximum Bitwise OR</a></h2><h3>Medium</h3><hr><div><p>You are given a <strong>0-indexed</strong> array <code>nums</code> of length <code>n</code>, consisting of non-negative integers. For each index <code>i</code> from <code>0</code> to <code>n - 1</code>, you must determine the size of the <strong>minimum sized</strong> non-empty subarray of <code>nums</code> starting at <code>i</code> (<strong>inclusive</strong>) that has the <strong>maximum</strong> possible <strong>bitwise OR</strong>.</p>
+<h2><a href="https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or">2411. Smallest Subarrays With Maximum Bitwise OR</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> array <code>nums</code> of length <code>n</code>, consisting of non-negative integers. For each index <code>i</code> from <code>0</code> to <code>n - 1</code>, you must determine the size of the <strong>minimum sized</strong> non-empty subarray of <code>nums</code> starting at <code>i</code> (<strong>inclusive</strong>) that has the <strong>maximum</strong> possible <strong>bitwise OR</strong>.</p>
 
 <ul>
 	<li>In other words, let <code>B<sub>ij</sub></code> be the bitwise OR of the subarray <code>nums[i...j]</code>. You need to find the smallest subarray starting at <code>i</code>, such that bitwise OR of this subarray is equal to <code>max(B<sub>ik</sub>)</code> where <code>i &lt;= k &lt;= n - 1</code>.</li>
@@ -11,9 +11,10 @@
 <p>A <strong>subarray</strong> is a contiguous non-empty sequence of elements within an array.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> nums = [1,0,2,1,3]
+<pre>
+<strong>Input:</strong> nums = [1,0,2,1,3]
 <strong>Output:</strong> [3,3,2,2,1]
 <strong>Explanation:</strong>
 The maximum possible bitwise OR starting at any index is 3. 
@@ -25,9 +26,10 @@ The maximum possible bitwise OR starting at any index is 3.
 Therefore, we return [3,3,2,2,1]. 
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> nums = [1,2]
+<pre>
+<strong>Input:</strong> nums = [1,2]
 <strong>Output:</strong> [2,1]
 <strong>Explanation:
 </strong>Starting at index 0, the shortest subarray that yields the maximum bitwise OR is of length 2.
@@ -43,4 +45,3 @@ Therefore, we return [2,1].
 	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
-</div>
