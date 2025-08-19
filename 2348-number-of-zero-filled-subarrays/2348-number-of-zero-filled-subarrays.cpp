@@ -1,22 +1,25 @@
 class Solution {
 public:
     long long zeroFilledSubarray(vector<int>& nums) {
-        unordered_map<int,int>freq;
-        freq[0]++;
-        long long zeroSubCount=0,zeroCnt=0;
-        for(int i=0;i<nums.size();i++)
+        int tail=0,head=-1,n=nums.size();
+        long long count=0;
+        while(tail<n)
         {
-            if(nums[i]==0)
+            while(head+1<n&&nums[head+1]==0)
             {
-                zeroCnt++;
+                head++;
+            }
+            if(head!=-1&&nums[head]==0&&nums[tail]==0)
+                count+=head-tail+1;
+            if(tail>head)
+            {
+                head=tail;
             }
             else
             {
-                zeroSubCount+=(zeroCnt*(zeroCnt+1))/2;
-                zeroCnt=0;
+                tail++;
             }
         }
-        zeroSubCount+=(zeroCnt*(zeroCnt+1))/2;
-        return zeroSubCount;
+        return count;
     }
 };
