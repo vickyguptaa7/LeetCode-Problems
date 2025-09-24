@@ -1,56 +1,44 @@
 class Solution {
 public:
-    string fractionToDecimal(int nume, int deno) {
-        if(nume==0)
-            return "0";
-        string beforeDecimal=to_string(abs((long long)nume/deno));
-        long long num=abs((long long)nume);
-        long long den=abs((long long)deno);
-        bool isNeg=false;
-        if(nume<0)
-            isNeg=!isNeg;
-        if(deno<0)
-            isNeg=!isNeg;
-        if(num%den==0ll)
-            return (isNeg)?"-"+beforeDecimal:beforeDecimal;
-        num-=(num/den)*den;
-        string afterDecimal="";
-        num*=10;
-        long long temp=num;
-        set<int>oset;
-        while(!oset.count(num))
-        {
-            oset.insert(num);
-            while(num<den)
-            {
-                num*=10;
-                afterDecimal+="0";
+    string fractionToDecimal(int num, int deno) {
+        bool isNuNegative = num < 0;
+        bool isDeNegative = deno < 0;
+        bool isNegative = isNuNegative && isDeNegative
+                              ? false
+                              : (isNuNegative || isDeNegative);
+
+        long long numerator = abs((long long)num);
+        long long denominator = abs((long long)deno);
+
+        string part1 = to_string(numerator / denominator);
+
+        numerator = numerator % denominator;
+
+        if (numerator == 0)
+            return to_string(isNegative?-stol(part1):stol(part1));
+
+        string part2;
+
+        map<int, int> mpp;
+        numerator *= 10;
+        do {
+            if (numerator < denominator) {
+                mpp[numerator] = part2.size();
+                numerator *= 10;
+                part2 += "0";
+                continue;
             }
-            afterDecimal+=to_string(num/den);
-            num-=(num/den)*den;
-            num*=10;
-            if(num==0)
-                break;
-        }
-        if(num==0)
-        {
-            return (isNeg)?"-"+beforeDecimal+"."+afterDecimal
-                :beforeDecimal+"."+afterDecimal;
-        }
-        int iter=0;
-        while(temp!=num)
-        {
-            while(temp<den)
-            {
-                temp*=10;
-                iter++;
-            }
-            temp-=(temp/den)*den;
-            temp*=10;
-            iter++;
-        }
-        afterDecimal.insert(iter,"(");
-        return (isNeg)?"-"+beforeDecimal+"."+afterDecimal+")":
-        beforeDecimal+"."+afterDecimal+")";
+            mpp[numerator] = part2.size();
+            part2 += to_string(numerator / denominator);
+            numerator = numerator % denominator;
+            numerator *= 10;
+        } while (numerator != 0 && !mpp.count(numerator));
+
+        if (mpp.count(numerator))
+            part2 = part2.substr(0, mpp[numerator]) + "(" +
+                    part2.substr(mpp[numerator]) + ")";
+
+        part1 = isNegative ? "-" + part1 : part1;
+        return part1 + "." + part2;
     }
 };
