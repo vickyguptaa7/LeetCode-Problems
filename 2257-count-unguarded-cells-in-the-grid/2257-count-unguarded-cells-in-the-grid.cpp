@@ -1,60 +1,57 @@
 class Solution {
 public:
-    int countUnguarded(int m, int n, vector<vector<int>>& guards, vector<vector<int>>& walls) {
-        vector<vector<int>>grid(m,vector<int>(n,0));
-        vector<vector<int>>mark(m,vector<int>(n,0));
-        for(auto g:guards)
+    void moveInDir(int x,int y,int dir,vector<vector<int>>&visited)
+    {
+        int n=visited.size(),m=visited[0].size();
+        while(x>=0&&x<n&&y>=0&&y<m&&visited[x][y]<2)
         {
-            grid[g[0]][g[1]]=1;
-        }
-        for(auto w:walls)
-        {
-            grid[w[0]][w[1]]=2;
-        }
-        int ans=0;
-        for(int i=0;i<m;i++)
-        {
-            for(int j=0;j<n;j++)
+            visited[x][y]=1;
+            if(dir==0)
             {
-                if(grid[i][j]!=1)continue;
-                mark[i][j]=1;
-
-                    for(int k=i-1;k>=0;k--) // up
-                    {
-                        if(grid[k][j]==0)
-                            mark[k][j]=1;
-                        else 
-                            break;
-                    }   
-                    for(int k=j-1;k>=0;k--) // left
-                    {
-                        if(grid[i][k]==0)
-                            mark[i][k]=1;
-                        else 
-                            break;
-                    }
-                for(int k=j+1;k<n;k++) // right
-                {
-                    if(grid[i][k]!=0)
-                        break;
-                    mark[i][k]=1;
-                }
-                for(int k=i+1;k<m;k++) // down
-                {
-                    if(grid[k][j]!=0)
-                        break;
-                    mark[k][j]=1;
-                }
+                x++;
+            }
+            else if(dir==1)
+            {
+                x--;
+            }
+            else if(dir==2)
+            {
+                y++;
+            }
+            else
+            {
+                y--;
             }
         }
+    }
 
-        for(auto a:mark)
+    int countUnguarded(int n, int m, vector<vector<int>>& guards, vector<vector<int>>& walls) {
+        vector<vector<int>>visited(n,vector<int>(m,0));
+        for(int i=0;i<walls.size();i++)
         {
-            for(auto b:a)
-            {
-                ans+=b==1;
-            }
+            visited[walls[i][0]][walls[i][1]]=3;
         }
-        return n*m-ans-(int)walls.size();
+        for(int i=0;i<guards.size();i++)
+        {
+            visited[guards[i][0]][guards[i][1]]=2;
+        }
+        for(int i=0;i<guards.size();i++)
+        {
+            moveInDir(guards[i][0]+1,guards[i][1],0,visited);
+            moveInDir(guards[i][0]-1,guards[i][1],1,visited);
+            moveInDir(guards[i][0],guards[i][1]+1,2,visited);
+            moveInDir(guards[i][0],guards[i][1]-1,3,visited);
+        }
+        int count=0;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                cout<<visited[i][j]<<" ";
+                count+=visited[i][j]==0;
+            }
+            cout<<"\n";
+        }
+        return count;
     }
 };
