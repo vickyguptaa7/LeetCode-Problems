@@ -11,29 +11,23 @@
  */
 class Solution {
 public:
+
+    void dfs(TreeNode*root, int lvl, vector<int>&sum)
+    {
+        if(!root)
+            return;
+        if(sum.size()==lvl)
+            sum.push_back(root->val);
+        else 
+            sum[lvl]+=root->val;
+        dfs(root->left,lvl+1,sum);
+        dfs(root->right,lvl+1,sum);
+    }
+
     int maxLevelSum(TreeNode* root) {
-        int mxLvl=1,lvl=1,mxSum=-2e9;
-        queue<TreeNode*>que;
-        que.push(root);
-        while(!que.empty())
-        {
-            int size=que.size();
-            int sum=0;
-            while(size--)
-            {
-                TreeNode*curr=que.front();
-                que.pop();
-                sum+=curr->val;
-                if(curr->left)que.push(curr->left);
-                if(curr->right)que.push(curr->right);
-            }
-            if(mxSum<sum)
-            {
-                mxLvl=lvl;
-                mxSum=sum;
-            }
-            lvl++;
-        }
-        return mxLvl;
+        vector<int>sum;
+        sum.push_back(INT_MIN);
+        dfs(root,1,sum);
+        return max_element(sum.begin(),sum.end())-sum.begin();
     }
 };
