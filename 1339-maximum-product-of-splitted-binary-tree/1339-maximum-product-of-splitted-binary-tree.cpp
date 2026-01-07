@@ -11,29 +11,29 @@
  */
 class Solution {
 public:
-    int SumTree(TreeNode*root)
-    {
-        if(!root)return 0;
-        return SumTree(root->left)+SumTree(root->right)+root->val;
-    }
-    
-    int helper(TreeNode*root,int totalSum,long long &result)
+
+    int dfsSum(TreeNode*root)
     {
         if(!root)
             return 0;
         
-        int leftS=helper(root->left,totalSum,result);
-        int rightS=helper(root->right,totalSum,result);
-        result=max(result,max((totalSum-(long long)leftS)*leftS
-                   ,(totalSum-(long long)rightS)*rightS));
-        return leftS+root->val+rightS;
-        
+        return dfsSum(root->left)+dfsSum(root->right)+root->val;
     }
-    
+
+    int dfsMaxProduct(TreeNode*root,long long& max_product,int total_sum)
+    {
+        if(!root)
+            return 0;
+        int sum = root->val + dfsMaxProduct(root->left,max_product,total_sum)+dfsMaxProduct(root->right,max_product,total_sum);
+        max_product=max(max_product,sum*1ll*(total_sum-sum));
+        return sum;
+    }
+
     int maxProduct(TreeNode* root) {
-        int treeSum=SumTree(root);
-        long long result=0,mod=1e9+7;
-        helper(root,treeSum,result);
-        return result%mod;
+        int total_sum = dfsSum(root);
+        long long max_product=1;
+        dfsMaxProduct(root,max_product,total_sum);
+        int mod=1e9+7;
+        return (max_product)%mod;
     }
 };
