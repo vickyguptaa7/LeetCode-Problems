@@ -1,42 +1,42 @@
 class Solution {
+    int dp[1001][1001];
 public:
-    
-    int asciiSum(int strt,string &s)
+
+    int helper(int x,int y,string &s1,string &s2)
     {
-        int sum=0;
-        for(int i=strt;i<s.size();i++)
-            sum+=s[i];
-        return sum;
+        if(x>=s1.size())
+        {
+            int cost=0;
+            for(int i=y;i<s2.size();i++)
+            {
+                cost+=s2[i];
+            }
+            return dp[x][y]=cost;
+        }
+        if(y>=s2.size())
+        {
+            int cost=0;
+            for(int i=x;i<s1.size();i++)
+            {
+                cost+=s1[i];
+            }
+            return dp[x][y]=cost;
+        }
+        if(dp[x][y]!=-1)
+            return dp[x][y];
+
+        if(s1[x]==s2[y])
+        {
+            return dp[x][y] = helper(x+1,y+1,s1,s2);
+        }
+        else 
+        {
+            return dp[x][y] = min(helper(x+1,y,s1,s2)+s1[x],helper(x,y+1,s1,s2)+s2[y]);
+        }
     }
-    
-    int helper(int indx1,int indx2,string &s1,string& s2,vector<vector<int>>&dp)
-    {
-        if(indx1==s1.size())
-        {
-            return asciiSum(indx2,s2);
-        }
-        if(indx2==s2.size())
-        {
-            return asciiSum(indx1,s1);
-        }
-        
-        if(dp[indx1][indx2]!=-1)
-            return dp[indx1][indx2];
-        
-        if(s1[indx1]==s2[indx2])
-        {
-            return dp[indx1][indx2]=helper(indx1+1,indx2+1,s1,s2,dp);
-        }
-        else
-        {
-            return dp[indx1][indx2]=min(helper(indx1+1,indx2,s1,s2,dp)+s1[indx1],
-                       helper(indx1,indx2+1,s1,s2,dp)+s2[indx2]);
-        }
-    }
-    
+
     int minimumDeleteSum(string s1, string s2) {
-        int n1=s1.size(),n2=s2.size();
-        vector<vector<int>>dp(n1,vector<int>(n2,-1));
-        return helper(0,0,s1,s2,dp);
+        memset(dp,-1,sizeof(dp));
+        return helper(0,0,s1,s2);
     }
 };
