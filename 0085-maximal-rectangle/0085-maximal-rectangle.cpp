@@ -1,28 +1,10 @@
 class Solution {
+    public:
     
-    vector<int> findNextSmallLeft(vector<int>&arr)
+    vector<int> nextSmallRight(vector<int>&arr)
     {
-        vector<int>temp;
-        stack<int>st;
-        for(int i=0;i<arr.size();i++)
-        {
-            while(!st.empty()&&arr[st.top()]>=arr[i])
-            {
-                st.pop();
-            }
-            if(!st.empty())
-                temp.push_back(st.top());
-            else
-                temp.push_back(-1);
-            st.push(i);
-        }
-        return temp;
-    }
-    
-    vector<int> findNextSmallRight(vector<int>&arr)
-    {
-        vector<int>temp;
-        stack<int>st;
+        vector<int>res;
+        stack<int>st;  
         int n=arr.size();
         for(int i=n-1;i>=0;i--)
         {
@@ -30,42 +12,68 @@ class Solution {
             {
                 st.pop();
             }
-            if(!st.empty())
-                temp.push_back(st.top());
+            if(st.empty())
+            {
+                res.push_back(n);
+            }
             else
-                temp.push_back(n);
+            {
+                res.push_back(st.top());
+            }
             st.push(i);
         }
-        reverse(temp.begin(),temp.end());
-        return temp;
+        reverse(res.begin(),res.end());
+        return res;
     }
-    
-    int helper(vector<int>&arr)
+    vector<int> nextSmallLeft(vector<int>&arr)
     {
-        vector<int>left=findNextSmallLeft(arr),
-        right=findNextSmallRight(arr);
-        
-        int area=0;
-        for(int i=0;i<arr.size();i++)
+        vector<int>res;
+        stack<int>st;  
+        int n=arr.size();
+        for(int i=0;i<n;i++)
         {
-            area=max(area,(right[i]-left[i]-1)*arr[i]);
+            while(!st.empty()&&arr[st.top()]>=arr[i])
+            {
+                st.pop();
+            }
+            if(st.empty())
+            {
+                res.push_back(-1);
+            }
+            else
+            {
+                res.push_back(st.top());
+            }
+            st.push(i);
         }
-        return area;
+        return res;
     }
     
-public:
-    int maximalRectangle(vector<vector<char>>& matrix) {
-        int r=matrix.size(),c=matrix[0].size();
-        vector<int>arr(c,0);
-        int area=0;
-        for(int i=0;i<r;i++)
+    int histogramHelper(vector<int>&pre)
+    {
+        vector<int>nextSmallR=nextSmallRight(pre);
+        vector<int>nextSmallL=nextSmallLeft(pre);
+        int res=0;
+        for(int i=0;i<pre.size();i++)
         {
-            for(int j=0;j<c;j++)
-            {
-                arr[j]=(matrix[i][j]=='0')?0:arr[j]+1;
-            }
-            area=max(area,helper(arr));
+            res=max(res,(nextSmallR[i]-nextSmallL[i]-1)*pre[i]);
         }
-        return area;
+        return res;
+    }
+    
+    int maximalRectangle(vector<vector<char>>& matrix) {
+        int n=matrix.size(),m=matrix[0].size();
+        vector<int>pre(m,0);
+        int res=0;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            {
+                pre[j]=matrix[i][j]=='0'?0:pre[j]+1;
+            }
+
+            res=max(res,histogramHelper(pre));
+        }
+        return res;
     }
 };
