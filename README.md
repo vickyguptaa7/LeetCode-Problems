@@ -6,6 +6,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
 ## Array
@@ -15,9 +16,14 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
 <!---LeetCode Topics End-->
