@@ -1,7 +1,7 @@
 class Solution {
 public:
     int maximumLength(vector<int>& nums) {
-        map<int,map<int,int>>mp;
+        unordered_map<int,unordered_map<int,int>>mp;
         for(int i=0;i<nums.size();i++)
         {
             int count=0, num=nums[i];
