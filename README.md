@@ -12,6 +12,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
@@ -51,4 +52,12 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 <!---LeetCode Topics End-->
