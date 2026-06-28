@@ -48,6 +48,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Enumeration
 | Problem Name | Difficulty |
@@ -69,4 +70,8 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0181-employees-earning-more-than-their-managers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0181-employees-earning-more-than-their-managers/) | Easy |
 | [0584-find-customer-referee](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0584-find-customer-referee/) | Easy |
 | [0620-not-boring-movies](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0620-not-boring-movies/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
 <!---LeetCode Topics End-->
