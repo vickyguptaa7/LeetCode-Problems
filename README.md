@@ -12,6 +12,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1502-can-make-arithmetic-progression-from-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1502-can-make-arithmetic-progression-from-sequence/) | Easy |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
@@ -59,6 +60,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1502-can-make-arithmetic-progression-from-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1502-can-make-arithmetic-progression-from-sequence/) | Easy |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 ## Database
 | Problem Name | Difficulty |
