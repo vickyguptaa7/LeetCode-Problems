@@ -41,7 +41,7 @@ public:
         int maxSum=helper(n-1,n-1,board,dp);
         if(maxSum<0)
             return {0,0};
-        vector<vector<vector<int>>>dp1(n,vector<vector<int>>(n,vector<int>(9000,-1)));
+        vector<vector<vector<int>>>dp1(n,vector<vector<int>>(n,vector<int>(2000,-1)));
         return {maxSum,helper1(n-1,n-1,maxSum,board,dp1)};
     }
 };
