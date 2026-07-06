@@ -14,6 +14,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1288-remove-covered-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1502-can-make-arithmetic-progression-from-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1502-can-make-arithmetic-progression-from-sequence/) | Easy |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
@@ -67,6 +68,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1288-remove-covered-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1502-can-make-arithmetic-progression-from-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1502-can-make-arithmetic-progression-from-sequence/) | Easy |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 ## Database
