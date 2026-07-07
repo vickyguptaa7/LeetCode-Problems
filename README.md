@@ -83,6 +83,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [0009-palindrome-number](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0009-palindrome-number/) | Easy |
 | [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
+| [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3754-concatenate-non-zero-digits-and-multiply-by-sum-i/) | Easy |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
