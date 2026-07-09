@@ -22,6 +22,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -30,6 +31,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
@@ -92,6 +94,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -102,6 +105,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -119,6 +123,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
