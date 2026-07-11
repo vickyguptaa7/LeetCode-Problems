@@ -1,40 +1,47 @@
 class Solution {
 public:
-    
-    pair<int,int>dfs(int src,int par,vector<int>&visited,vector<int>list[])
+
+    void helper(int src,vector<int>list[],vector<int>&visited,int mark)
     {
-        visited[src]++;
-        int nodeCnt=1,edgeCnt=list[src].size();
-        for(auto child:list[src])
+        visited[src]=mark;
+        for(int i=0;i<list[src].size();i++)
         {
-            if(visited[child])
-            {
-                continue;
-            }
-            auto curr=dfs(child,src,visited,list);
-            edgeCnt+=curr.second;
-            nodeCnt+=curr.first;
+            if(visited[list[src][i]])continue;
+            helper(list[src][i],list,visited,mark);
         }
-        return {nodeCnt,edgeCnt};
     }
-    
+
     int countCompleteComponents(int n, vector<vector<int>>& edges) {
+        vector<int>visited(n,0);
         vector<int>list[n];
         for(auto edge:edges)
         {
             list[edge[0]].push_back(edge[1]);
             list[edge[1]].push_back(edge[0]);
         }
-        vector<int>visited(n,false);
-        int cntr=0;
+        int count=0,mark=1;
         for(int i=0;i<n;i++)
         {
             if(visited[i])continue;
-            auto res=dfs(i,-1,visited,list);
-            int edgeCnt=res.second;
-            int nodeCnt=res.first;
-            if(edgeCnt==nodeCnt*(nodeCnt-1))cntr++;
+            helper(i,list,visited,mark);
+            int same=0,isComplete=true;
+            for(int j=0;j<n;j++)
+            {
+                same+=(mark==visited[j]);
+            }
+            for(int j=0;j<n;j++)
+            {
+                if(mark==visited[j])
+                {
+                    if(same-1!=list[j].size())
+                    {
+                        isComplete=false;
+                    }
+                }
+            }
+            mark++;
+            count+=isComplete;
         }
-        return cntr;
+        return count;
     }
 };
