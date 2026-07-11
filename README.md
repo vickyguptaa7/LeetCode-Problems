@@ -99,11 +99,13 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
+| [2685-count-the-number-of-complete-components](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
+| [2685-count-the-number-of-complete-components](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 ## Heap (Priority Queue)
@@ -119,10 +121,12 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
+| [2685-count-the-number-of-complete-components](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
+| [2685-count-the-number-of-complete-components](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
