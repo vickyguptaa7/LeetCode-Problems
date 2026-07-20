@@ -15,6 +15,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1260-shift-2d-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1260-shift-2d-grid/) | Easy |
 | [1288-remove-covered-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1331-rank-transform-of-an-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -126,6 +127,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1260-shift-2d-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1260-shift-2d-grid/) | Easy |
 | [1301-number-of-paths-with-max-score](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 ## Depth-First Search
@@ -156,6 +158,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1260-shift-2d-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1260-shift-2d-grid/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 ## Stack
 | Problem Name | Difficulty |
