@@ -12,6 +12,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1967-number-of-strings-that-appear-as-substrings-in-word/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
+| [3499-maximize-active-section-with-trade-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3499-maximize-active-section-with-trade-i/) | Medium |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -69,6 +70,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
+| [3499-maximize-active-section-with-trade-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3499-maximize-active-section-with-trade-i/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
