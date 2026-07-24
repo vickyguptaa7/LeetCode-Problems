@@ -27,6 +27,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
+| [3514-number-of-unique-xor-triplets-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
@@ -71,6 +72,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
 | [3499-maximize-active-section-with-trade-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3499-maximize-active-section-with-trade-i/) | Medium |
+| [3514-number-of-unique-xor-triplets-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -101,6 +103,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0009-palindrome-number](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0009-palindrome-number/) | Easy |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
+| [3514-number-of-unique-xor-triplets-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3754-concatenate-non-zero-digits-and-multiply-by-sum-i/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
@@ -174,4 +177,8 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3514-number-of-unique-xor-triplets-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 <!---LeetCode Topics End-->
