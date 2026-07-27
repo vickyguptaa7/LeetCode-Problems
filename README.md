@@ -22,6 +22,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0055-jump-game](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0055-jump-game/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
+| [0238-product-of-array-except-self](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [1260-shift-2d-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1260-shift-2d-grid/) | Easy |
 | [1288-remove-covered-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1288-remove-covered-intervals/) | Medium |
@@ -72,6 +73,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0238-product-of-array-except-self](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0238-product-of-array-except-self/) | Medium |
 | [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Enumeration
