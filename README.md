@@ -17,6 +17,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0011-container-with-most-water](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0011-container-with-most-water/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0027-remove-element/) | Easy |
 | [0045-jump-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0045-jump-game-ii/) | Medium |
@@ -86,6 +87,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0011-container-with-most-water](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0011-container-with-most-water/) | Medium |
 | [0045-jump-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0045-jump-game-ii/) | Medium |
 | [0055-jump-game](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0055-jump-game/) | Medium |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
@@ -184,6 +186,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0011-container-with-most-water](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0011-container-with-most-water/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0027-remove-element/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
