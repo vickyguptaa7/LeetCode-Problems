@@ -23,6 +23,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0026-remove-duplicates-from-sorted-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0027-remove-element/) | Easy |
 | [0045-jump-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0045-jump-game-ii/) | Medium |
+| [0048-rotate-image](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0048-rotate-image/) | Medium |
 | [0055-jump-game](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0055-jump-game/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
@@ -128,6 +129,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0009-palindrome-number](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0009-palindrome-number/) | Easy |
+| [0048-rotate-image](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0048-rotate-image/) | Medium |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
@@ -167,6 +169,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0048-rotate-image/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [1260-shift-2d-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1260-shift-2d-grid/) | Easy |
 | [1301-number-of-paths-with-max-score](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1301-number-of-paths-with-max-score/) | Hard |
