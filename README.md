@@ -7,6 +7,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0006-zigzag-conversion](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0006-zigzag-conversion/) | Medium |
+| [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
@@ -24,6 +25,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0027-remove-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0027-remove-element/) | Easy |
 | [0045-jump-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0045-jump-game-ii/) | Medium |
 | [0048-rotate-image](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0048-rotate-image/) | Medium |
+| [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
 | [0055-jump-game](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0055-jump-game/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
@@ -49,6 +51,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -106,6 +109,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [1288-remove-covered-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1331-rank-transform-of-an-array/) | Easy |
