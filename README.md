@@ -40,6 +40,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0560-subarray-sum-equals-k/) | Medium |
+| [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0974-subarray-sums-divisible-by-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [1260-shift-2d-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1260-shift-2d-grid/) | Easy |
@@ -67,6 +68,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0219-contains-duplicate-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0560-subarray-sum-equals-k/) | Medium |
+| [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [0974-subarray-sums-divisible-by-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -85,6 +87,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [0169-majority-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0169-majority-element/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
+| [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
@@ -124,6 +127,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0045-jump-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0045-jump-game-ii/) | Medium |
 | [0055-jump-game](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0055-jump-game/) | Medium |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
+| [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
@@ -135,6 +139,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0056-merge-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0056-merge-intervals/) | Medium |
 | [0169-majority-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0169-majority-element/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
+| [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [1288-remove-covered-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1331-rank-transform-of-an-array/) | Easy |
@@ -197,6 +202,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
+| [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
