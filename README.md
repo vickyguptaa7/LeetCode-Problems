@@ -31,6 +31,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0219-contains-duplicate-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
@@ -55,6 +56,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0219-contains-duplicate-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
@@ -149,6 +151,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0219-contains-duplicate-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
