@@ -249,6 +249,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0020-valid-parentheses/) | Easy |
+| [0155-min-stack](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0155-min-stack/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
@@ -274,4 +275,8 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
+## Design
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0155-min-stack](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0155-min-stack/) | Medium |
 <!---LeetCode Topics End-->
