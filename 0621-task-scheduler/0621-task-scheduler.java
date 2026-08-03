@@ -1,40 +1,24 @@
 class Solution {
     public int leastInterval(char[] tasks, int n) {
         int[] freq=new int[26];
+        int mx=0,cnt=0;
         for(char task:tasks)
         {
             freq[task-'A']++;
+            mx=Math.max(mx,freq[task-'A']);
         }
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-
-        for(int num:freq)
+        for(int f:freq)cnt+=(f==mx)?1:0;
+        int space = (mx-1)*(n);
+        int left = tasks.length-mx-space-cnt+1;
+        
+        int res = space + mx + (cnt-1);
+        if(left<=0)
         {
-            if(num!=0)
-                pq.add(num);
+            return res;
         }
-
-        int res=0;
-        int[] temp = new int[n+1];
-        while(pq.size()>0)
+        else
         {
-            int len=Math.min(pq.size(),n+1);
-            for(int i=0;i<len;i++)
-            {
-                temp[i]=pq.peek();
-                pq.poll();
-            }
-            boolean isZero = temp[0]==1;
-            for(int i=0;i<len;i++)
-            {
-                if(temp[i]==1)continue;
-                pq.add(temp[i]-1);
-            }
-            res+=len;
-            if(!isZero)
-            {
-                res+=n+1-len;
-            }
+            return res+left;
         }
-        return res;
     }
 }
