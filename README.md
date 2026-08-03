@@ -30,6 +30,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0053-maximum-subarray](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0055-jump-game/) | Medium |
 | [0056-merge-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0056-merge-intervals/) | Medium |
+| [0057-insert-interval](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0057-insert-interval/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
