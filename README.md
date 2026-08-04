@@ -44,6 +44,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0560-subarray-sum-equals-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
+| [0735-asteroid-collision](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0735-asteroid-collision/) | Medium |
 | [0974-subarray-sums-divisible-by-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [1260-shift-2d-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1260-shift-2d-grid/) | Easy |
 | [1288-remove-covered-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1288-remove-covered-intervals/) | Medium |
@@ -256,6 +257,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0735-asteroid-collision](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0735-asteroid-collision/) | Medium |
 | [1260-shift-2d-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1260-shift-2d-grid/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 ## Stack
@@ -263,6 +265,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0020-valid-parentheses/) | Easy |
 | [0155-min-stack](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0155-min-stack/) | Medium |
+| [0735-asteroid-collision](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0735-asteroid-collision/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
