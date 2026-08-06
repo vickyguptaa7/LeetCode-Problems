@@ -42,6 +42,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
+| [0503-next-greater-element-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
@@ -269,11 +270,13 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0020-valid-parentheses/) | Easy |
 | [0155-min-stack](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0155-min-stack/) | Medium |
+| [0503-next-greater-element-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0735-asteroid-collision](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0735-asteroid-collision/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0503-next-greater-element-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0503-next-greater-element-ii/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Bit Manipulation
 | Problem Name | Difficulty |
