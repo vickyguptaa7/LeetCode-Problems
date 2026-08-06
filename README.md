@@ -123,6 +123,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
+| [3345-smallest-divisible-digit-product-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
 | [3499-maximize-active-section-with-trade-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3499-maximize-active-section-with-trade-i/) | Medium |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 ## Greedy
@@ -177,6 +178,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [1979-find-greatest-common-divisor-of-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
+| [3345-smallest-divisible-digit-product-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
 | [3536-maximum-product-of-two-digits](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3536-maximum-product-of-two-digits/) | Easy |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
