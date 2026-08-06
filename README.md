@@ -24,6 +24,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0011-container-with-most-water](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0011-container-with-most-water/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0027-remove-element/) | Easy |
+| [0031-next-permutation](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0031-next-permutation/) | Medium |
 | [0045-jump-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0045-jump-game-ii/) | Medium |
 | [0048-rotate-image](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0048-rotate-image/) | Medium |
 | [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
@@ -255,6 +256,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0011-container-with-most-water](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0011-container-with-most-water/) | Medium |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0027-remove-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0027-remove-element/) | Easy |
+| [0031-next-permutation](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0031-next-permutation/) | Medium |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
