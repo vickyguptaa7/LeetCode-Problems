@@ -9,6 +9,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0006-zigzag-conversion](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0006-zigzag-conversion/) | Medium |
 | [0020-valid-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0020-valid-parentheses/) | Easy |
 | [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
+| [0402-remove-k-digits](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0402-remove-k-digits/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
@@ -135,6 +136,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0045-jump-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0045-jump-game-ii/) | Medium |
 | [0055-jump-game](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0055-jump-game/) | Medium |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
+| [0402-remove-k-digits](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0402-remove-k-digits/) | Medium |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
@@ -270,12 +272,14 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0020-valid-parentheses/) | Easy |
 | [0155-min-stack](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0155-min-stack/) | Medium |
+| [0402-remove-k-digits](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0402-remove-k-digits/) | Medium |
 | [0503-next-greater-element-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0735-asteroid-collision](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0735-asteroid-collision/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0402-remove-k-digits](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0402-remove-k-digits/) | Medium |
 | [0503-next-greater-element-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0503-next-greater-element-ii/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Bit Manipulation
