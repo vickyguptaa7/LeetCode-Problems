@@ -51,6 +51,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0735-asteroid-collision](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0735-asteroid-collision/) | Medium |
 | [0974-subarray-sums-divisible-by-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
+| [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 | [1260-shift-2d-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1260-shift-2d-grid/) | Easy |
 | [1288-remove-covered-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1301-number-of-paths-with-max-score/) | Hard |
@@ -122,6 +123,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0238-product-of-array-except-self](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0974-subarray-sums-divisible-by-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
+| [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 | [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Enumeration
@@ -182,6 +184,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0048-rotate-image](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0048-rotate-image/) | Medium |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
+| [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
@@ -250,6 +253,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
+| [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 ## Number Theory
 | Problem Name | Difficulty |
@@ -300,6 +304,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
+| [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 ## Bucket Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -320,4 +325,12 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0075-sort-colors](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0075-sort-colors/) | Medium |
+## Minimax
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
+## Zero-Sum Game
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 <!---LeetCode Topics End-->
