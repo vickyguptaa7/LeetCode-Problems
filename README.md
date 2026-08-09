@@ -40,6 +40,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0169-majority-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0169-majority-element/) | Easy |
+| [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
 | [0219-contains-duplicate-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
@@ -129,6 +130,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Enumeration
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
 | [3345-smallest-divisible-digit-product-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
 | [3499-maximize-active-section-with-trade-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3499-maximize-active-section-with-trade-i/) | Medium |
@@ -183,6 +185,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0009-palindrome-number](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0009-palindrome-number/) | Easy |
 | [0048-rotate-image](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0048-rotate-image/) | Medium |
 | [0050-powx-n](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0050-powx-n/) | Medium |
+| [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
@@ -259,6 +262,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Number Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
@@ -335,4 +339,16 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
+## Primality Test
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
+## Sieve Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
+## Prime Number Sieve
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
 <!---LeetCode Topics End-->
