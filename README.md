@@ -52,6 +52,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0735-asteroid-collision](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0735-asteroid-collision/) | Medium |
 | [0974-subarray-sums-divisible-by-k](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
+| [0976-largest-perimeter-triangle](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0976-largest-perimeter-triangle/) | Easy |
 | [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 | [1260-shift-2d-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1260-shift-2d-grid/) | Easy |
 | [1288-remove-covered-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1288-remove-covered-intervals/) | Medium |
@@ -145,6 +146,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0402-remove-k-digits](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0402-remove-k-digits/) | Medium |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
+| [0976-largest-perimeter-triangle](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0976-largest-perimeter-triangle/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
@@ -160,6 +162,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
+| [0976-largest-perimeter-triangle](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0976-largest-perimeter-triangle/) | Easy |
 | [1288-remove-covered-intervals](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1502-can-make-arithmetic-progression-from-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1502-can-make-arithmetic-progression-from-sequence/) | Easy |
@@ -188,6 +191,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
+| [0976-largest-perimeter-triangle](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0976-largest-perimeter-triangle/) | Easy |
 | [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
@@ -327,6 +331,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0075-sort-colors](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0075-sort-colors/) | Medium |
+| [0976-largest-perimeter-triangle](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0976-largest-perimeter-triangle/) | Easy |
 ## Bubble Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -351,4 +356,8 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
+## Polygons
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0976-largest-perimeter-triangle](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0976-largest-perimeter-triangle/) | Easy |
 <!---LeetCode Topics End-->
