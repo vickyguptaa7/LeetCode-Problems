@@ -189,6 +189,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0009-palindrome-number](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0009-palindrome-number/) | Easy |
 | [0048-rotate-image](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0048-rotate-image/) | Medium |
 | [0050-powx-n](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0050-powx-n/) | Medium |
+| [0172-factorial-trailing-zeroes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0172-factorial-trailing-zeroes/) | Medium |
 | [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
 | [0263-ugly-number](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0263-ugly-number/) | Easy |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
