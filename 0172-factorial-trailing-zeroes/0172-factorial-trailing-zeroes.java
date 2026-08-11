@@ -1,14 +1,10 @@
 class Solution {
     public int trailingZeroes(int n) {
-        int five=0;
-        for(int i=5;i<=n;i+=5)
+        int five=0,num=5;
+        for(int i=1;i<=10;i++)
         {
-            int temp=i;
-            while(temp%5==0)
-            {
-                temp/=5;
-                five++;
-            }
+            five+=(n/num);
+            num*=5;
         }
         return five;
     }
