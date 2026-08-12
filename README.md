@@ -8,6 +8,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [0006-zigzag-conversion](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0006-zigzag-conversion/) | Medium |
 | [0020-valid-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0020-valid-parentheses/) | Easy |
+| [0022-generate-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0022-generate-parentheses/) | Medium |
 | [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
 | [0402-remove-k-digits](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0402-remove-k-digits/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
@@ -99,6 +100,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0022-generate-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0022-generate-parentheses/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
 ## Counting
 | Problem Name | Difficulty |
@@ -266,6 +268,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0022-generate-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0022-generate-parentheses/) | Medium |
 | [0045-jump-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0045-jump-game-ii/) | Medium |
 | [0053-maximum-subarray](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0055-jump-game/) | Medium |
@@ -379,4 +382,8 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1232-check-if-it-is-a-straight-line](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1232-check-if-it-is-a-straight-line/) | Easy |
+## Bracket Sequences
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0022-generate-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0022-generate-parentheses/) | Medium |
 <!---LeetCode Topics End-->
