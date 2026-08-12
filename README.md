@@ -65,6 +65,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [1979-find-greatest-common-divisor-of-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2958-length-of-longest-subarray-with-at-most-k-frequency/) | Medium |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3514-number-of-unique-xor-triplets-ii/) | Medium |
@@ -88,6 +89,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [1331-rank-transform-of-an-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2958-length-of-longest-subarray-with-at-most-k-frequency/) | Medium |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
@@ -215,6 +217,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [0219-contains-duplicate-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2958-length-of-longest-subarray-with-at-most-k-frequency/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
