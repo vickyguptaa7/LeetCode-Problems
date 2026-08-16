@@ -68,6 +68,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1967-number-of-strings-that-appear-as-substrings-in-word/) | Easy |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
+| [2029-stone-game-ix](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2029-stone-game-ix/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2958-length-of-longest-subarray-with-at-most-k-frequency/) | Medium |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2996-smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy |
@@ -116,6 +117,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0621-task-scheduler](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0621-task-scheduler/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
+| [2029-stone-game-ix](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2029-stone-game-ix/) | Medium |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Divide and Conquer
@@ -163,6 +165,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0976-largest-perimeter-triangle](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0976-largest-perimeter-triangle/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
+| [2029-stone-game-ix](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2029-stone-game-ix/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 ## Sorting
@@ -212,6 +215,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 | [1232-check-if-it-is-a-straight-line](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1232-check-if-it-is-a-straight-line/) | Easy |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
+| [2029-stone-game-ix](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2029-stone-game-ix/) | Medium |
 | [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
 | [2523-closest-prime-numbers-in-range](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2523-closest-prime-numbers-in-range/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
@@ -341,6 +345,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
 | [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
+| [2029-stone-game-ix](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2029-stone-game-ix/) | Medium |
 ## Bucket Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -366,10 +371,12 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
+| [2029-stone-game-ix](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2029-stone-game-ix/) | Medium |
 ## Zero-Sum Game
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
+| [2029-stone-game-ix](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2029-stone-game-ix/) | Medium |
 ## Primality Test
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -397,4 +404,8 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0022-generate-parentheses/) | Medium |
+## Nim Game
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2029-stone-game-ix](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2029-stone-game-ix/) | Medium |
 <!---LeetCode Topics End-->
