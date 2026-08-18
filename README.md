@@ -47,6 +47,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0128-longest-consecutive-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0169-majority-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0169-majority-element/) | Easy |
 | [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
+| [0216-combination-sum-iii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0216-combination-sum-iii/) | Medium |
 | [0219-contains-duplicate-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
@@ -115,6 +116,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0040-combination-sum-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0040-combination-sum-ii/) | Medium |
 | [0078-subsets](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0078-subsets/) | Medium |
 | [0090-subsets-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0090-subsets-ii/) | Medium |
+| [0216-combination-sum-iii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0216-combination-sum-iii/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
 ## Counting
 | Problem Name | Difficulty |
