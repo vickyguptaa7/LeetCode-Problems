@@ -29,6 +29,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0027-remove-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0027-remove-element/) | Easy |
 | [0031-next-permutation](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0031-next-permutation/) | Medium |
 | [0039-combination-sum](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0039-combination-sum/) | Medium |
+| [0040-combination-sum-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0040-combination-sum-ii/) | Medium |
 | [0045-jump-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0045-jump-game-ii/) | Medium |
 | [0048-rotate-image](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0048-rotate-image/) | Medium |
 | [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
@@ -111,6 +112,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0022-generate-parentheses/) | Medium |
 | [0039-combination-sum](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0039-combination-sum/) | Medium |
+| [0040-combination-sum-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0040-combination-sum-ii/) | Medium |
 | [0078-subsets](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0078-subsets/) | Medium |
 | [0090-subsets-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0090-subsets-ii/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1980-find-unique-binary-string/) | Medium |
