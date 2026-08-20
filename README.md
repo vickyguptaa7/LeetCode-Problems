@@ -10,6 +10,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0020-valid-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0020-valid-parentheses/) | Easy |
 | [0022-generate-parentheses](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0022-generate-parentheses/) | Medium |
 | [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
+| [0139-word-break](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0139-word-break/) | Medium |
 | [0402-remove-k-digits](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0402-remove-k-digits/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1189-maximum-number-of-balloons/) | Easy |
@@ -45,6 +46,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0139-word-break](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0139-word-break/) | Medium |
 | [0169-majority-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0169-majority-element/) | Easy |
 | [0204-count-primes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0204-count-primes/) | Medium |
 | [0216-combination-sum-iii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0216-combination-sum-iii/) | Medium |
@@ -90,6 +92,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0049-group-anagrams](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0049-group-anagrams/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0139-word-break](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0139-word-break/) | Medium |
 | [0169-majority-element](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0169-majority-element/) | Easy |
 | [0219-contains-duplicate-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0347-top-k-frequent-elements/) | Medium |
@@ -295,6 +298,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [0055-jump-game](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0055-jump-game/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
+| [0139-word-break](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0139-word-break/) | Medium |
 | [0486-predict-the-winner](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0486-predict-the-winner/) | Medium |
 | [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1301-number-of-paths-with-max-score/) | Hard |
@@ -418,4 +422,16 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2029-stone-game-ix](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2029-stone-game-ix/) | Medium |
+## Trie
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0139-word-break](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0139-word-break/) | Medium |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0139-word-break](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0139-word-break/) | Medium |
+## Brute-Force Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0139-word-break](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/0139-word-break/) | Medium |
 <!---LeetCode Topics End-->
