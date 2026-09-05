@@ -86,6 +86,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [3731-find-missing-elements](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3731-find-missing-elements/) | Easy |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
+| [3904-smallest-stable-index-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3904-smallest-stable-index-ii/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -156,6 +157,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [1140-stone-game-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/1140-stone-game-ii/) | Medium |
 | [2485-find-the-pivot-integer](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/2485-find-the-pivot-integer/) | Easy |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
+| [3904-smallest-stable-index-ii](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3904-smallest-stable-index-ii/) | Medium |
 ## Enumeration
 | Problem Name | Difficulty |
 | ------- | ------- |
