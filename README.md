@@ -240,6 +240,7 @@ Collection of LeetCode questions for problem solving! - Created using [LeetHub](
 | [3658-gcd-of-odd-and-even-sums](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3658-gcd-of-odd-and-even-sums/) | Easy |
 | [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3754-concatenate-non-zero-digits-and-multiply-by-sum-i/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
+| [3870-count-commas-in-range](https://github.com/vickyguptaa7/LeetCode-Problems/tree/main/3870-count-commas-in-range/) | Easy |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
